@@ -13,8 +13,8 @@ gulp.task('html', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('./style/style.scss')
+    return gulp.src('./app/styles/style.scss')
      .pipe(sourcemaps.init())
      .pipe(sass().on('error', sass.logError))
-     .pipe(gulp.dest('./style'));
+     .pipe(gulp.dest('./app/styles/'));
    });
