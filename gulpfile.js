@@ -19,8 +19,13 @@ gulp.task('sass', function () {
      .pipe(gulp.dest('./app/styles/'));
 });
 
+gulp.task('css', function(){
+    return gulp.src("./app/styles/css.css")
+    .pipe(gulp.dest('build/css/'))
+})
+
 gulp.task('run', function(){
-    runSequence('html', 'sass');
+    runSequence('html', 'sass', 'css');
 })
 
 gulp.task('default', ['run'])   
