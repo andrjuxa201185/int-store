@@ -4,7 +4,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const rigger = require('gulp-rigger');
 const runSequence = require('run-sequence');
 const watch = require('gulp-watch');
-const clean = require('gulp-clean');
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 
