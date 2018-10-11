@@ -13,6 +13,7 @@
     "gulp": "^3.9.1",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "run-sequence": "^2.2.1"
   }
 }
