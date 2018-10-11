@@ -2,7 +2,7 @@
 
 ## Clone the project:
 
-git clone https://github.com/andrjuxa201185/internet-store.git
+git clone https://github.com/andrjuxa201185/int-store.git
 
 ## Upload npm packages:
 
