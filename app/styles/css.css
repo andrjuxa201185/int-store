@@ -1,6 +1,3 @@
-h1 {
-  color: black; }
-
 .col-1 {
   width: 8.33333%; }
 
@@ -36,3 +33,7 @@ h1 {
 
 .col-12 {
   width: 100%; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
