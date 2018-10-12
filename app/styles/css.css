@@ -35,5 +35,7 @@
   width: 100%; }
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
   width: 1170px;
   margin: 0 auto; }
