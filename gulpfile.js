@@ -30,6 +30,12 @@ gulp.task('images', function(){
     .pipe(reload({stream: true}));
 });
 
+gulp.task('fonts', function(){
+    return gulp.src("./app/fonts/**/*")
+    .pipe(gulp.dest('build/fonts/'))
+    .pipe(reload({stream: true}));
+});
+
 gulp.task('css', function(){
     return gulp.src(['./app/styles/css.css', './app/styles/font-awesome.css'])
     .pipe(gulp.dest('build/css/'))
@@ -57,7 +63,7 @@ gulp.task('watch',function(){
 });
 
 gulp.task('run', function(){
-    runSequence('images', 'html', 'reload-css', 'browser-sync', 'watch');
+    runSequence('images', 'html','fonts', 'reload-css', 'browser-sync', 'watch');
 });
 
 gulp.task('default', ['run']); 
