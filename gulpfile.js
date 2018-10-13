@@ -37,7 +37,7 @@ gulp.task('fonts', function(){
 });
 
 gulp.task('css', function(){
-    return gulp.src(['./app/styles/css.css', './app/styles/font-awesome.css'])
+    return gulp.src('./app/styles/css.css')
     .pipe(gulp.dest('build/css/'))
     .pipe(reload({stream: true}));
 });
