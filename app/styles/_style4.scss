@@ -1,0 +1,63 @@
+main.part4{
+    ul.breadcramb{
+
+    }
+    aside{
+        outline: solid 1px red;
+    }
+    .main{
+        .sort{
+            padding: 15px;
+            box-sizing: border-box;
+            outline: solid 1px green;
+        }
+        .items{
+            outline: solid 1px black;
+            display: flex;
+            flex-wrap: wrap;
+            .wrapper-item{
+                padding: 15px;
+                box-sizing: border-box;
+               .item{
+                outline: solid 1px blue;
+                   .div-img{
+                       img{
+                           width: 100%;
+                           height: auto;
+                       }
+                   }
+                   .title-price{
+                       .title{
+
+                       }
+                       .price{
+
+                       }
+                   }
+                   .reviews{
+                       .div-img {
+                           width: 30px;
+                           height: 30px;
+                           border-radius: 50%;
+                           overflow: hidden;
+                           img{
+                               height: 100%;
+                           }
+                       }
+                       p{
+
+                       }
+                       .stars{
+                            .fa-star{
+                                color: #ffa726;
+                            }
+                       }
+                       .count-reviews{
+
+                       }
+                   }
+               } 
+            }
+        }
+    }
+}

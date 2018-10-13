@@ -2419,3 +2419,33 @@ table {
   flex-wrap: wrap;
   width: 1170px;
   margin: 0 auto; }
+
+main.part4 aside {
+  outline: solid 1px red; }
+
+main.part4 .main .sort {
+  padding: 15px;
+  box-sizing: border-box;
+  outline: solid 1px green; }
+
+main.part4 .main .items {
+  outline: solid 1px black;
+  display: flex;
+  flex-wrap: wrap; }
+  main.part4 .main .items .wrapper-item {
+    padding: 15px;
+    box-sizing: border-box; }
+    main.part4 .main .items .wrapper-item .item {
+      outline: solid 1px blue; }
+      main.part4 .main .items .wrapper-item .item .div-img img {
+        width: 100%;
+        height: auto; }
+      main.part4 .main .items .wrapper-item .item .reviews .div-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden; }
+        main.part4 .main .items .wrapper-item .item .reviews .div-img img {
+          height: 100%; }
+      main.part4 .main .items .wrapper-item .item .reviews .stars .fa-star {
+        color: #ffa726; }
