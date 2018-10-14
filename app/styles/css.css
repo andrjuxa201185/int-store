@@ -2434,7 +2434,6 @@ main.part4 {
     box-sizing: border-box;
     outline: solid 1px green; }
   main.part4 .main .items {
-    outline: solid 1px black;
     display: flex;
     flex-wrap: wrap; }
     main.part4 .main .items .wrapper-item {
