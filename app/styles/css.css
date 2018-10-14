@@ -2456,16 +2456,16 @@ main.part4 {
           main.part4 .main .items .wrapper-item .item .title-price .title h3 {
             margin-bottom: 15px;
             color: #263238;
-            font-family: 'Roboto', sans-serif;
+            font-family: "Roboto", sans-serif;
             font-size: 16px;
             font-weight: bolder; }
           main.part4 .main .items .wrapper-item .item .title-price .title h4 {
-            font-family: 'Roboto', sans-serif;
+            font-family: "Roboto", sans-serif;
             font-weight: bolder;
             font-size: 14px;
             color: #8bc34a; }
           main.part4 .main .items .wrapper-item .item .title-price .price {
-            font-family: 'Roboto', sans-serif;
+            font-family: "Roboto", sans-serif;
             font-size: 20px;
             font-weight: bold;
             color: #263238; }
@@ -2492,7 +2492,7 @@ main.part4 {
             margin-left: 10px;
             color: #546e7a;
             font-size: 14px;
-            font-family: 'Roboto', sans-serif;
+            font-family: "Roboto", sans-serif;
             font-weight: bolder; }
           main.part4 .main .items .wrapper-item .item .reviews .stars .fa-star {
             color: #ffa726;
@@ -2500,7 +2500,7 @@ main.part4 {
           main.part4 .main .items .wrapper-item .item .reviews .count-reviews {
             color: #263238;
             font-size: 12px;
-            font-family: 'Roboto', sans-serif; }
+            font-family: "Roboto", sans-serif; }
             main.part4 .main .items .wrapper-item .item .reviews .count-reviews::before {
               content: '(';
               color: #b0bec5;

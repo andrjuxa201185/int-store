@@ -48,14 +48,14 @@ main.part4{
                                margin-bottom: 15px;
                                color: #263238;
                                font: {
-                                   family:'Roboto', sans-serif;
+                                   family: $font;
                                    size: 16px;
                                    weight: bolder;
                                }
                            }
                            h4{
                                 font: {
-                                    family:'Roboto', sans-serif;
+                                    family: $font;
                                     weight: bolder;
                                 }
                                font-size: 14px;
@@ -64,7 +64,7 @@ main.part4{
                        }
                        .price{
                             font: {
-                                family:'Roboto', sans-serif;
+                                family: $font;
                                 size: 20px;
                                 weight: bold;
                             }
@@ -101,7 +101,7 @@ main.part4{
                            color: #546e7a;
                            font: {
                                 size: 14px;
-                                family: 'Roboto', sans-serif;
+                                family: $font;
                                 weight: bolder;
                            }
                        }
@@ -114,7 +114,7 @@ main.part4{
                        .count-reviews{
                            color: #263238;
                            font-size: 12px;
-                           font-family: 'Roboto', sans-serif;
+                           font-family: $font;
                            &::before{
                                content: '(';
                                color: #b0bec5;
