@@ -1,4 +1,5 @@
 main.part4{
+    background-color: $mainBackgroundColor;
     ul.breadcrumb{
         outline: solid 1px gray;
     }
@@ -25,8 +26,12 @@ main.part4{
             .wrapper-item{
                 padding: 15px;
                 box-sizing: border-box;
-               .item{
-                outline: solid 1px blue;
+                .item{
+                background-color: white;
+                border: solid 1px #ebeeef;
+                &:hover{
+                    box-shadow: 0 10px 30px 5px rgba(128, 128, 128, 0.288);
+                }
                    .div-img{
                        img{
                            width: 100%;
@@ -82,7 +87,9 @@ main.part4{
                        }
                        .div-img {
                            width: 30px;
+                           min-width: 30px;
                            height: 30px;
+                           min-height: 30px;
                            border-radius: 50%;
                            overflow: hidden;
                            img{
@@ -90,10 +97,13 @@ main.part4{
                            }
                        }
                        p{
+                        margin-left: 10px;
                            color: #546e7a;
-                           font-size: 14px;
-                           font-family: 'Roboto', sans-serif;
-                           margin-left: 10px;
+                           font: {
+                                size: 14px;
+                                family: 'Roboto', sans-serif;
+                                weight: bolder;
+                           }
                        }
                        .stars{
                             .fa-star{
@@ -107,12 +117,12 @@ main.part4{
                            font-family: 'Roboto', sans-serif;
                            &::before{
                                content: '(';
-                               color: #546e7a;
+                               color: #b0bec5;
                                font-size: 12px;
                            }
                            &::after{
                                content: ')';
-                               color: #546e7a;
+                               color: #b0bec5;
                                font-size: 12px;
                            }
                        }
