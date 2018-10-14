@@ -1,9 +1,16 @@
 main.part4{
-    ul.breadcramb{
-
+    ul.breadcrumb{
+        outline: solid 1px gray;
     }
     aside{
         outline: solid 1px red;
+        .wrapper-categories{
+            outline: solid 1px aqua;
+            padding: 25px;
+            .categories{
+
+            }
+        }
     }
     .main{
         .sort{

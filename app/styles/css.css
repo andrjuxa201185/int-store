@@ -2420,8 +2420,14 @@ table {
   width: 1170px;
   margin: 0 auto; }
 
+main.part4 ul.breadcrumb {
+  outline: solid 1px gray; }
+
 main.part4 aside {
   outline: solid 1px red; }
+  main.part4 aside .wrapper-categories {
+    outline: solid 1px aqua;
+    padding: 25px; }
 
 main.part4 .main .sort {
   padding: 15px;
