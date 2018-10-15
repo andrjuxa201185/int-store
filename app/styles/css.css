@@ -86,3 +86,138 @@ table {
   flex-wrap: wrap;
   width: 1170px;
   margin: 0 auto; }
+
+.section-1 {
+  background: #f4f6f5; }
+
+h2 {
+  font-style: "Roboto";
+  font-weight: bold;
+  font-size: 36px;
+  color: #263238;
+  padding-top: 120px;
+  display: flex;
+  justify-content: center; }
+
+.tabs {
+  display: flex;
+  padding: 60px 0;
+  justify-content: center; }
+  .tabs a {
+    text-decoration: none;
+    color: #263238;
+    font-size: 14px;
+    background: #ffffff;
+    padding: 15px 20px;
+    margin: 6px; }
+  .tabs li.tabs-red a {
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 15px 25px; }
+
+.last-tabs {
+  display: flex;
+  padding: 80px 0 110px 0;
+  justify-content: center; }
+
+.last-tabs li a {
+  padding: 20px 30px;
+  font-size: 16px;
+  background: #ffffff;
+  text-decoration: none;
+  margin: 7px;
+  color: #263238;
+  box-shadow: 0 0 5px 1px #dce3e8; }
+
+.four-square {
+  display: flex;
+  justify-content: center; }
+
+.col-3 {
+  width: 440px;
+  height: 410px;
+  position: relative;
+  background: white;
+  box-shadow: 0 0 5px 1px #dce3e8;
+  margin: 15px; }
+
+.one img {
+  width: 100%; }
+
+.triangle {
+  border-top: 60px solid #8bc34a;
+  border-right: 60px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.triangle i {
+  display: flex;
+  margin-bottom: 20px;
+  background: transparent;
+  color: #ffffff; }
+
+.two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7ecf2;
+  height: 90px; }
+
+.number-15 h3 {
+  padding: 40px 30px;
+  color: #263238;
+  font-size: 20px;
+  font-weight: bold; }
+
+.two-text {
+  padding: 0 30px; }
+  .two-text h3 {
+    color: #263238;
+    padding-bottom: 16px;
+    font-size: 18px; }
+  .two-text span {
+    color: #8bc34a;
+    font-size: 14px; }
+
+.three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 70px; }
+  .three p {
+    padding-left: 12px; }
+
+.circle-boss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .circle-boss p {
+    font-size: 14px;
+    color: #546e7a; }
+
+.star {
+  display: flex;
+  justify-content: space-between; }
+  .star p {
+    font-size: 12px;
+    color: #546e7a; }
+  .star i {
+    font-size: 12px;
+    color: #ffa726; }
+
+.circle {
+  background: #b5b5b5;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; }
+
+.last-text span {
+  color: #b0bec5; }
+
+.section-2 h2 {
+  padding-bottom: 60px; }
+
+.section-2 .four-square {
+  padding-bottom: 210px; }
