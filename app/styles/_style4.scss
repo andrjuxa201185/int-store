@@ -1,6 +1,3 @@
-h1,h2,h3,h4,h5,h6,p,span,a,div{
-    font-family: $font;
-}
 main.part4{
     background-color: $mainBackgroundColor;
     ul.breadcrumb{
@@ -29,23 +26,20 @@ main.part4{
         }
     }
     aside{
+        .aside-header{
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            border-bottom: solid 1px $borderColor;
+            color: #263238;
+        }
         padding-right: 15px;
         box-sizing: border-box;
         .wrapper-categories{
             background-color: white;
             border: solid 1px $borderColor;
             padding: 25px;
-            
-            .categories{
-                h3{
-                    padding-bottom: 20px;
-                    font-size: 20px;
-                    font-weight: bold;
-                    text-transform: capitalize;
-                    border-bottom: solid 1px $borderColor;
-                    color: #263238;
-                }
-            }
             ul{
                 li{
                     padding-top: 30px;
@@ -79,6 +73,12 @@ main.part4{
                         }
                     }
                 }
+            }
+        }
+        .wrapper-price-range{
+            @extend .wrapper-categories;
+            .price-range{
+                
             }
         }
     }

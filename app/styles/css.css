@@ -2378,6 +2378,10 @@ table {
   overflow: visible;
   clip: auto; }
 
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; }
+
 .col-1 {
   width: 8.33333%; }
 
@@ -2423,9 +2427,6 @@ table {
 * {
   font-family: "Roboto", sans-serif; }
 
-h1, h2, h3, h4, h5, h6, p, span, a, div {
-  font-family: "Roboto", sans-serif; }
-
 main.part4 {
   background-color: #f4f6f5; }
   main.part4 ul.breadcrumb {
@@ -2447,39 +2448,39 @@ main.part4 {
   main.part4 aside {
     padding-right: 15px;
     box-sizing: border-box; }
-    main.part4 aside .wrapper-categories {
+    main.part4 aside .aside-header {
+      padding-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: capitalize;
+      border-bottom: solid 1px #dedede;
+      color: #263238; }
+    main.part4 aside .wrapper-categories, main.part4 aside .wrapper-price-range {
       background-color: white;
       border: solid 1px #dedede;
       padding: 25px; }
-      main.part4 aside .wrapper-categories .categories h3 {
-        padding-bottom: 20px;
-        font-size: 20px;
-        font-weight: bold;
-        text-transform: capitalize;
-        border-bottom: solid 1px #dedede;
-        color: #263238; }
-      main.part4 aside .wrapper-categories ul li {
+      main.part4 aside .wrapper-categories ul li, main.part4 aside .wrapper-price-range ul li {
         padding-top: 30px; }
-        main.part4 aside .wrapper-categories ul li a {
+        main.part4 aside .wrapper-categories ul li a, main.part4 aside .wrapper-price-range ul li a {
           text-decoration: none;
           display: flex;
           justify-content: space-between; }
-          main.part4 aside .wrapper-categories ul li a span.name-categories {
+          main.part4 aside .wrapper-categories ul li a span.name-categories, main.part4 aside .wrapper-price-range ul li a span.name-categories {
             color: #263238;
             font-size: 15px;
             font-weight: bold; }
-            main.part4 aside .wrapper-categories ul li a span.name-categories .fa-chevron-right {
+            main.part4 aside .wrapper-categories ul li a span.name-categories .fa-chevron-right, main.part4 aside .wrapper-price-range ul li a span.name-categories .fa-chevron-right {
               font-size: 14px;
               color: #8bc34a;
               margin-right: 12px; }
-          main.part4 aside .wrapper-categories ul li a span.count-categories {
+          main.part4 aside .wrapper-categories ul li a span.count-categories, main.part4 aside .wrapper-price-range ul li a span.count-categories {
             font-size: 15px;
             color: #90a4ae; }
-            main.part4 aside .wrapper-categories ul li a span.count-categories::before {
+            main.part4 aside .wrapper-categories ul li a span.count-categories::before, main.part4 aside .wrapper-price-range ul li a span.count-categories::before {
               content: '(';
               color: #b0bec5;
               font-size: 16px; }
-            main.part4 aside .wrapper-categories ul li a span.count-categories::after {
+            main.part4 aside .wrapper-categories ul li a span.count-categories::after, main.part4 aside .wrapper-price-range ul li a span.count-categories::after {
               content: ')';
               color: #b0bec5;
               font-size: 16px; }
