@@ -81,8 +81,8 @@ main.part4{
             .price-range{
                 input[type=range] {
                     position: relative;
+                    margin: 25px 0 18px 0;
                     -webkit-appearance: none;
-                    margin: 18px 0;
                     width: 100%;
                     &::after {
                         position: absolute;
@@ -117,7 +117,7 @@ main.part4{
                     width: 100%;
                     height: 5px;
                     cursor: pointer;
-                    background: #37474f;
+                    // background:-webkit-linear-gradient(left ,#37474f 0%,#37474f 50%,#f2f5f8 50%, #f2f5f8 100%);
                   }
                   input[type=range]::-webkit-slider-thumb {
                     height: 16px;
@@ -133,16 +133,26 @@ main.part4{
                     position: relative;
                     z-index: 999;
                   }
-                  input[type=range]:focus::-webkit-slider-runnable-track {
-                    background: #37474f;
-                  }
-                  input[type="range"]::-ms-fill-lower {
-                    background-color: #43e5f7; 
-                }
-                input[type="range"]::-ms-fill-upper {  
-                    background-color: #9a905d;
-                }
+                 .cost {
+                     color: $textLightGrey;
+                     font-size: 15px;
+                     display: flex;
+                     justify-content: center;
+                     position: relative;
+                     padding-bottom: 15px;
+
+                    span:first-child {
+                        position: absolute;
+                        left: 0;
+                    }
+                    span:last-child {
+                        
+                    }
+                 }
+
+
                   a {
+                      margin-top: 10px;
                       text-decoration: none;
                       display: flex;
                       justify-content: center;

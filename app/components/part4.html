@@ -76,7 +76,13 @@
             <div class="wrapper-price-range">
                 <div class="price-range">
                     <h3 class="aside-header">Price Range</h3>
-                    <input type="range" name="" min="0" max="1200" step="1" value="600">
+                    <div class="wrapper-input">
+                        <input type="range" id="rangeInput" name="" min="0" max="1200" step="1" value="600">
+                    </div>
+                    <div class="cost">
+                        <span>$0</span>
+                        <span>$600</span>
+                    </div>
                     <a href=""><i class="fa fa-search" aria-hidden="true"></i>
                         Search</a>
                 </div>
@@ -480,7 +486,14 @@
         </div>
     </div>
     </main>
-        
+        <script>
+            let range = document.getElementById('rangeInput')
+            range.style.background = "-webkit-linear-gradient(left ,#37474f 0%,#37474f 50%,#f2f5f8 50%, #f2f5f8 100%)";
+            range.addEventListener("input", function(){
+                let val = range.value;
+                range.style.background = '-webkit-linear-gradient(left ,#37474f 0%,#37474f '+(val*100)/1200+'%,#f2f5f8 '+val*100/1200+'%, #f2f5f8 100%)';
+            })
+        </script>
     //= ./parts/footer.html
 </body>
 </html>
