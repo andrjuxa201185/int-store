@@ -2565,6 +2565,8 @@ main.part4 {
 
 main.ruslan {
   box-sizing: border-box; }
+  main.ruslan .green {
+    color: #8bc34a; }
   main.ruslan .section-1 {
     background: #f4f6f5; }
   main.ruslan h2 {
@@ -2587,7 +2589,7 @@ main.ruslan {
       margin: 6px;
       font-weight: 700; }
       main.ruslan .tabs a:hover {
-        box-shadow: 0 0 10px 5px #dce3e8; }
+        box-shadow: 0 10px 30px 5px rgba(128, 128, 128, 0.288); }
     main.ruslan .tabs li.tabs-red a {
       background-color: #e74c3c;
       color: #ffffff;
@@ -2605,7 +2607,8 @@ main.ruslan {
     color: #263238;
     font-weight: 600; }
     main.ruslan .last-tabs li a:hover {
-      box-shadow: 0 0 10px 5px #dce3e8; }
+      box-shadow: 0 10px 30px 5px rgba(128, 128, 128, 0.288);
+      cursor: pointer; }
   main.ruslan .four-square {
     display: flex;
     justify-content: center; }
@@ -2617,7 +2620,8 @@ main.ruslan {
     border: 1px solid #e7ecf2;
     margin: 15px; }
     main.ruslan .col-3:hover {
-      box-shadow: 0 0 10px 5px #dce3e8; }
+      box-shadow: 0 10px 30px 5px rgba(128, 128, 128, 0.288);
+      cursor: pointer; }
   main.ruslan .one img {
     width: 100%; }
   main.ruslan .triangle {
@@ -2690,7 +2694,54 @@ main.ruslan {
   main.ruslan .section-2 h2 {
     padding-bottom: 60px; }
   main.ruslan .section-2 .four-square {
-    padding-bottom: 210px; }
+    padding-bottom: 70px; }
   main.ruslan .four-circle {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0 9px;
+    padding-bottom: 120px; }
+    main.ruslan .four-circle .grey {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #90a4ae;
+      margin: 4px; }
+    main.ruslan .four-circle .green {
+      background: #8bc34a; }
+  main.ruslan .section-3 {
+    background: #263238; }
+    main.ruslan .section-3 h2 {
+      color: #ffffff; }
+    main.ruslan .section-3 h4 {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: bold;
+      padding-top: 35px; }
+    main.ruslan .section-3 h4.green {
+      color: #8bc34a; }
+    main.ruslan .section-3 .circle {
+      width: 113px;
+      height: 113px;
+      background: #b5b5b5; }
+      main.ruslan .section-3 .circle.lighter {
+        background: #d4d4d4; }
+      main.ruslan .section-3 .circle:hover {
+        background: #8bc34a;
+        cursor: pointer; }
+    main.ruslan .section-3 p {
+      color: #90a4ae;
+      font-size: 15px;
+      padding-top: 35px; }
+    main.ruslan .section-3 .container {
+      display: flex;
+      justify-content: center; }
+    main.ruslan .section-3 .col-4 {
+      padding: 90px 0 120px 0; }
+      main.ruslan .section-3 .col-4 .three-circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40px 0 40px; }
+        main.ruslan .section-3 .col-4 .three-circle p {
+          line-height: 1.6em;
+          text-align: center; }

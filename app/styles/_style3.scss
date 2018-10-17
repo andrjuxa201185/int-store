@@ -1,6 +1,10 @@
 main.ruslan {
     box-sizing: border-box;
 
+    .green {
+        color: $colorGreen;
+    }
+
 
     .section-1 {
         background: #f4f6f5;
@@ -33,7 +37,8 @@ main.ruslan {
             margin: 6px;
             font-weight: 700;
             &:hover {
-                box-shadow: 0 0 10px 5px #dce3e8;
+                box-shadow: $boxShadow;
+                
             }
         }
 
@@ -59,7 +64,8 @@ main.ruslan {
         color: $textBlack;
         font-weight: 600;
         &:hover {
-            box-shadow: 0 0 10px 5px #dce3e8;
+            box-shadow: $boxShadow;
+            cursor: pointer;
         }
     }
 
@@ -77,15 +83,14 @@ main.ruslan {
         position: relative;
         background: white;
         border: $borderForCol;
-        // box-shadow: 0 0 5px 1px #dce3e8;
         margin: 15px;
         &:hover {
-            box-shadow: 0 0 10px 5px #dce3e8;
+            box-shadow: $boxShadow;
+            cursor: pointer;
         }
     }
 
     .one {
-        // border: $borderForCol;
         img {
             width: 100%;
         }
@@ -210,14 +215,101 @@ main.ruslan {
     
 
     .four-square {
-        padding-bottom: 210px;
+        padding-bottom: 70px;
         }
     }
 
     .four-circle {
         display: flex;
-        justify-content: center;   
+        justify-content: center;
+        padding: 0 9px;
+        padding-bottom: 120px;
+
+        .grey {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: $textLightGrey;
+            margin: 4px;
+        }
+
+        .green {
+            background: $colorGreen; 
+        }
     }
+
+
+
+    .section-3 {
+        background: $textBlack;
+
+        h2 {
+            color: $colorWhite;
+        }
+
+        h4 {
+            font-size: 24px;
+            color: $colorWhite;
+            font-weight: bold;
+            padding-top: 35px;
+        }
+
+        h4.green {
+            color: $colorGreen;
+        }
+
+        .circle {
+            width: 113px;
+            height: 113px;
+            background: #b5b5b5;
+
+            &.lighter {
+                background: #d4d4d4;
+            }
+
+            &:hover {
+                background: $colorGreen;
+                cursor: pointer;
+            }
+        }
+
+        p {
+            color: $textLightGrey;
+            font-size: 15px;
+            padding-top: 35px; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .col-4 {
+            padding: 90px 0 120px 0;
+            
+            .three-circle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 40px 0 40px;
+
+                p {
+                line-height: 1.6em;
+                text-align: center;
+                }
+            }
+            
+
+            
+        }
+
+    }
+
+    
+
+
+
 
 }
 
