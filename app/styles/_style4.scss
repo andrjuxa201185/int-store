@@ -136,6 +136,12 @@ main.part4{
                   input[type=range]:focus::-webkit-slider-runnable-track {
                     background: #37474f;
                   }
+                  input[type="range"]::-ms-fill-lower {
+                    background-color: #43e5f7; 
+                }
+                input[type="range"]::-ms-fill-upper {  
+                    background-color: #9a905d;
+                }
                   a {
                       text-decoration: none;
                       display: flex;
