@@ -2731,7 +2731,9 @@ main.ruslan {
     main.ruslan .section-3 p {
       color: #90a4ae;
       font-size: 15px;
-      padding-top: 35px; }
+      padding-top: 35px;
+      line-height: 1.6em;
+      text-align: center; }
     main.ruslan .section-3 .container {
       display: flex;
       justify-content: center; }
@@ -2742,6 +2744,35 @@ main.ruslan {
         flex-direction: column;
         align-items: center;
         padding: 0 40px 0 40px; }
-        main.ruslan .section-3 .col-4 .three-circle p {
-          line-height: 1.6em;
-          text-align: center; }
+  main.ruslan .section-4 {
+    background: #f4f6f5; }
+    main.ruslan .section-4 .col-12 {
+      display: flex;
+      justify-content: center; }
+    main.ruslan .section-4 .block-4 {
+      width: 1104px;
+      height: 440px;
+      margin: 130px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 10px 30px 5px rgba(128, 128, 128, 0.288);
+      background-image: url(../images/for_03_main-section-4.png); }
+    main.ruslan .section-4 .green {
+      background: #8bc34a;
+      width: 650px;
+      height: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main.ruslan .section-4 .green h4 {
+        color: #ffffff;
+        font-size: 30px; }
+        main.ruslan .section-4 .green h4 span {
+          font-weight: bold; }
+    main.ruslan .section-4 .last-tabs {
+      padding: 20px 0 20px 45px; }
+      main.ruslan .section-4 .last-tabs a {
+        font-size: 18px;
+        color: #263238;
+        padding: 25px 40px; }

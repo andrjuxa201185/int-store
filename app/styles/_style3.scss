@@ -3,7 +3,10 @@ main.ruslan {
 
     .green {
         color: $colorGreen;
+        
     }
+
+
 
 
     .section-1 {
@@ -276,7 +279,9 @@ main.ruslan {
         p {
             color: $textLightGrey;
             font-size: 15px;
-            padding-top: 35px; 
+            padding-top: 35px;
+            line-height: 1.6em;
+            text-align: center; 
         }
 
         .container {
@@ -293,23 +298,70 @@ main.ruslan {
                 flex-direction: column;
                 align-items: center;
                 padding: 0 40px 0 40px;
-
-                p {
-                line-height: 1.6em;
-                text-align: center;
-                }
             }
-            
-
-            
+              
         }
 
     }
 
     
+    .section-4 {
+        background: #f4f6f5;
+
+        .col-12 {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .block-4 {
+            width: 1104px;
+            height: 440px;
+            margin: 130px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: $boxShadow;
+            background-image: url(../images/for_03_main-section-4.png)
+        }
+
+        .green {
+            background: $colorGreen; 
+            width: 650px;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h4 {
+                color: $colorWhite;
+                font-size: 30px;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            
+        }
+
+        .last-tabs {
+            padding: 20px 0 20px 45px;
+
+            a {
+                font-size: 18px;
+                color: $textBlack;
+                padding: 25px 40px;
+                
+            }
+        }
+
+    }
 
 
 
+
+    
 
 }
 
