@@ -1,5 +1,109 @@
 main.part4{
     background-color: $mainBackgroundColor;
+    .item {
+        background-color: white;
+        border: solid 1px #ebeeef;
+        &:hover{
+            box-shadow: 0 10px 30px 5px rgba(128, 128, 128, 0.288);
+        }
+           .div-img{
+               img{
+                   width: 100%;
+                   height: auto;
+               }
+           }
+           .title-price{
+                display: flex;
+                justify-content: space-between;
+                padding: 27px 22px;
+                border-bottom: solid 1px #e7ecf2;
+               .title{
+                   h3{
+                       margin-bottom: 15px;
+                       color: #263238;
+                       font: {
+                           family: $font;
+                           size: 16px;
+                           weight: bolder;
+                       }
+                   }
+                   h4{
+                        font: {
+                            family: $font;
+                            weight: bolder;
+                        }
+                       font-size: 14px;
+                       color: $colorGreen;
+                   }
+               }
+               .price{
+                    font: {
+                        family: $font;
+                        size: 20px;
+                        weight: bold;
+                    }
+                    color: #263238;
+               }
+           }
+           .reviews{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               padding: 15px 20px;
+               .reviews-left{
+                   flex-grow: 1;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+               }
+               .reviews-right{
+                   @extend .reviews-left;
+               }
+               .div-img {
+                   width: 30px;
+                   min-width: 30px;
+                   height: 30px;
+                   min-height: 30px;
+                   border-radius: 50%;
+                   overflow: hidden;
+                   img{
+                       height: 100%;
+                   }
+               }
+               p{
+                margin-left: 10px;
+                   color: #546e7a;
+                   font: {
+                        size: 14px;
+                        family: $font;
+                        weight: bolder;
+                   }
+               }
+               .stars{
+                    .fa-star{
+                        color: #ffa726;
+                        font-size: 12px;
+                    }
+               }
+               .count-reviews{
+                   color: #263238;
+                   font-size: 12px;
+                   font-family: $font;
+                   &::before{
+                       content: '(';
+                       color: #b0bec5;
+                       font-size: 12px;
+                   }
+                   &::after{
+                       content: ')';
+                       color: #b0bec5;
+                       font-size: 12px;
+                   }
+               }
+           }
+       } 
+
+
     ul.breadcrumb{
         display: flex;
         padding: 50px 0;
@@ -158,114 +262,12 @@ main.part4{
             box-sizing: border-box;
             outline: solid 1px green;
         }
-        .items{
+        .items {
             display: flex;
             flex-wrap: wrap;
             .wrapper-item{
                 padding: 15px;
                 box-sizing: border-box;
-                .item{
-                background-color: white;
-                border: solid 1px #ebeeef;
-                &:hover{
-                    box-shadow: 0 10px 30px 5px rgba(128, 128, 128, 0.288);
-                }
-                   .div-img{
-                       img{
-                           width: 100%;
-                           height: auto;
-                       }
-                   }
-                   .title-price{
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 27px 22px;
-                        border-bottom: solid 1px #e7ecf2;
-                       .title{
-                           h3{
-                               margin-bottom: 15px;
-                               color: #263238;
-                               font: {
-                                   family: $font;
-                                   size: 16px;
-                                   weight: bolder;
-                               }
-                           }
-                           h4{
-                                font: {
-                                    family: $font;
-                                    weight: bolder;
-                                }
-                               font-size: 14px;
-                               color: $colorGreen;
-                           }
-                       }
-                       .price{
-                            font: {
-                                family: $font;
-                                size: 20px;
-                                weight: bold;
-                            }
-                            color: #263238;
-                       }
-                   }
-                   .reviews{
-                       display: flex;
-                       justify-content: space-between;
-                       align-items: center;
-                       padding: 15px 20px;
-                       .reviews-left{
-                           flex-grow: 1;
-                           display: flex;
-                           justify-content: center;
-                           align-items: center;
-                       }
-                       .reviews-right{
-                           @extend .reviews-left;
-                       }
-                       .div-img {
-                           width: 30px;
-                           min-width: 30px;
-                           height: 30px;
-                           min-height: 30px;
-                           border-radius: 50%;
-                           overflow: hidden;
-                           img{
-                               height: 100%;
-                           }
-                       }
-                       p{
-                        margin-left: 10px;
-                           color: #546e7a;
-                           font: {
-                                size: 14px;
-                                family: $font;
-                                weight: bolder;
-                           }
-                       }
-                       .stars{
-                            .fa-star{
-                                color: #ffa726;
-                                font-size: 12px;
-                            }
-                       }
-                       .count-reviews{
-                           color: #263238;
-                           font-size: 12px;
-                           font-family: $font;
-                           &::before{
-                               content: '(';
-                               color: #b0bec5;
-                               font-size: 12px;
-                           }
-                           &::after{
-                               content: ')';
-                               color: #b0bec5;
-                               font-size: 12px;
-                           }
-                       }
-                   }
-               } 
             }
         }
     }
