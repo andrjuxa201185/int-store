@@ -2776,3 +2776,21 @@ main.ruslan {
         font-size: 18px;
         color: #263238;
         padding: 25px 40px; }
+  main.ruslan .section-5 .container {
+    display: flex;
+    justify-content: space-between; }
+  main.ruslan .section-5 .col-4 {
+    padding-top: 60px; }
+    main.ruslan .section-5 .col-4 img {
+      width: 100%; }
+    main.ruslan .section-5 .col-4 .wrapper {
+      padding: 0 15px; }
+      main.ruslan .section-5 .col-4 .wrapper .text {
+        font-size: 24px;
+        font-weight: bold;
+        color: #263238;
+        background: #f8f8f8;
+        text-align: center;
+        padding: 40px 0; }
+  main.ruslan .section-5 h2 {
+    text-align: center; }

@@ -355,14 +355,46 @@ main.ruslan {
                 
             }
         }
-
     }
 
+    .section-5 {
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col-4 {
+            padding-top: 60px;
+            
+
+            img {
+                width: 100%;
+            }
+
+            .wrapper {
+                padding: 0 15px;
+
+                .text {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $textBlack;
+                    background: #f8f8f8;
+                    text-align: center;
+                    padding: 40px 0;
+                }
+            }
+        }
+
+        h2 {
+            text-align: center;
+        }
 
 
 
-    
 
+
+    }
 }
 
 
