@@ -3,17 +3,26 @@ section-Withdrawals {
     display: flex;
     flex-direction: column;
     padding-bottom: 145px;
-    
-    a{
-    background: $colorGreen;
-    color: $colorWhite;
-    display: flex;
-    width: 200px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    text-decoration: none;
+
+    .home{
+        display: flex;
+        font-size: 14px;
+
+        a{
+            text-decoration: none;
+            color: #d0d8db; 
+            padding: 20px 5px; 
+
+            span{
+                color: $textBlack;
+                font-weight: bold;
+            }
+        }
+
+        p{
+            padding: 20px 5px;
+            color: #d0d8db;
+        }
     }
 
     .main{
@@ -26,24 +35,108 @@ section-Withdrawals {
         border-bottom: 1px solid $borderColor;
         padding: 20px 35px;
         margin: 0;
-        font-family: Myriad Pro;
-        font-size: 24px;
+        font-family: $font;
+        font-size: 20px;
         font-weight: bold;
     }
 
-    container-1{
+    .container-1{
         background: $colorWhite;
         border: 1px solid $borderColor;
         margin-right: 35px;
         
 
-        .wrap p{
-            font-size: 16px;
+        .wrap {
+
+            p{
+            font-size: 14px;
             font-weight: 600;
             margin: 16px 0px;
             color: $textGrey;
+
+            span{
+                color: $colorGreen;
+                font-size: 20px;
+            }
         }
+
+        button{
+            background: $colorGreen;
+            color: $colorWhite;
+            display: flex;
+            width: 200px;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            text-decoration: none;
+            border: none;
+            }
+    }
         
+        form{
+            margin-bottom: 50px;
+        
+        }
+
+        .forms{
+            padding: 0px 40px;
+            
+
+            input{
+                padding: 10px 20px;
+                background-color: #f9f9f9;
+                border: 1px solid $borderColor;
+            }
+            
+            select{
+                width: 100%;
+                background-color: #f9f9f9;
+                padding: 10px 20px;
+                border: 1px solid $borderColor;
+
+            }
+        }
+
+    }
+
+    .container-2{
+        background: $colorWhite;
+        border: 1px solid $borderColor;
+        align-self: flex-start;
+
+        .history{
+            padding: 35px;
+    }
+    
+        p:nth-child(4){
+            color: $colorGreen;
+        }
+
+        wrap{
+            display: flex;
+            background-color: #f9f9f9;
+
+            p{
+                padding: 12px 25px;
+                margin: 0 ;
+                font-size: 10px;
+                font-family: $font;
+                font-weight: 600;
+                color: $textGrey;
+
+                span {
+                    color: $textGrey;
+                }
+
+               
+            }
+        }
+        wrap:nth-child(2n){
+            background-color: $colorWhite;
+        }
+    }
+}
         form{
             margin-bottom: 50px;
         
@@ -63,9 +156,8 @@ section-Withdrawals {
             }
         }
 
-    }
 
-    container-2{
+    .container-2{
         background: $colorWhite;
         border: 1px solid $borderColor;
         align-self: flex-start;
@@ -96,4 +188,3 @@ section-Withdrawals {
             background-color: $colorWhite;
         }
     }
-}
