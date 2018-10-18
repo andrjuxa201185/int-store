@@ -2620,13 +2620,12 @@ main.ruslan {
     display: flex;
     justify-content: center; }
   main.ruslan .col-3 {
-    width: 440px;
-    height: 410px;
+    padding: 15px; }
+  main.ruslan .square-block {
     position: relative;
     background: white;
-    border: 1px solid #e7ecf2;
-    margin: 15px; }
-    main.ruslan .col-3:hover {
+    border: 1px solid #e7ecf2; }
+    main.ruslan .square-block:hover {
       box-shadow: 0 10px 30px 5px rgba(128, 128, 128, 0.288);
       cursor: pointer; }
   main.ruslan .one img {

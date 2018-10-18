@@ -86,14 +86,18 @@ main.ruslan {
         // padding: 0 30px 30px 30px;
     }
 
-
     .col-3 {
-        width: 440px;
-        height: 410px;
+        padding: 15px;
+    }
+
+    .square-block {
+        // width: 440px;
+        // height: 410px;
         position: relative;
         background: white;
         border: $borderForCol;
-        margin: 15px;
+        // margin: 15px;
+        // padding: 15px;
         &:hover {
             box-shadow: $boxShadow;
             cursor: pointer;
