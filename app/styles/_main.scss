@@ -1,3 +1,7 @@
+*{
+    font-family: $font;
+    box-sizing: border-box;
+}
 @for $i from 1 through 12{
     $width: percentage($i / 12);
     .col-#{$i}{
@@ -9,7 +13,4 @@
     flex-wrap: wrap;
     width: 1170px;
     margin: 0 auto;
-}
-*{
-    font-family: $font;
 }
