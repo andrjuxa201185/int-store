@@ -2567,6 +2567,13 @@ main.ruslan {
   box-sizing: border-box; }
   main.ruslan .green {
     color: #8bc34a; }
+  main.ruslan i.fa-bolt {
+    top: 10px;
+    left: 15px;
+    position: absolute;
+    z-index: 3;
+    color: #ffffff;
+    font-size: 18px; }
   main.ruslan .section-1 {
     background: #f4f6f5; }
   main.ruslan h2 {
@@ -2630,11 +2637,6 @@ main.ruslan {
     position: absolute;
     top: 0;
     left: 0; }
-  main.ruslan .triangle i {
-    display: flex;
-    margin-bottom: 20px;
-    background: transparent;
-    color: #ffffff; }
   main.ruslan .two {
     display: flex;
     justify-content: space-between;
@@ -2785,6 +2787,8 @@ main.ruslan {
       width: 100%; }
     main.ruslan .section-5 .col-4 .wrapper {
       padding: 0 15px; }
+      main.ruslan .section-5 .col-4 .wrapper:hover {
+        cursor: pointer; }
       main.ruslan .section-5 .col-4 .wrapper .text {
         font-size: 24px;
         font-weight: bold;

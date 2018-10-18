@@ -3,9 +3,16 @@ main.ruslan {
 
     .green {
         color: $colorGreen;
-        
     }
 
+    i.fa-bolt {
+        top: 10px;
+        left: 15px;
+        position: absolute;
+        z-index: 3;
+        color: $colorWhite;
+        font-size: 18px; 
+    }
 
 
 
@@ -108,12 +115,12 @@ main.ruslan {
         left: 0;
     }
 
-    .triangle i {
-        display: flex;
-        margin-bottom: 20px;
-        background: transparent;
-        color: $colorWhite;
-    }
+    // .triangle i {
+    //     display: flex;
+    //     margin-bottom: 20px;
+    //     background: transparent;
+    //     color: $colorWhite;
+    // }
 
 
     .two {
@@ -366,6 +373,8 @@ main.ruslan {
 
         .col-4 {
             padding-top: 60px;
+
+            
             
 
             img {
@@ -374,6 +383,10 @@ main.ruslan {
 
             .wrapper {
                 padding: 0 15px;
+
+                &:hover {
+                    cursor: pointer;
+                }
 
                 .text {
                     font-size: 24px;
