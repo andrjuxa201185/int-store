@@ -1,4 +1,4 @@
 node_modules/
 package-lock.json
 build/
-styles/css.css
+app/styles/css.css

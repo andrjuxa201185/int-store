@@ -1,5 +1,6 @@
 main.part4{
     background-color: $mainBackgroundColor;
+    padding-bottom: 110px;
     .item {
         background-color: white;
         border: solid 1px #ebeeef;
@@ -130,6 +131,7 @@ main.part4{
         }
     }
     aside{
+        padding-right: 15px;
         .aside-header{
             padding-bottom: 20px;
             font-size: 20px;
@@ -138,8 +140,6 @@ main.part4{
             border-bottom: solid 1px $borderColor;
             color: #263238;
         }
-        padding-right: 15px;
-        box-sizing: border-box;
         .wrapper-categories{
             background-color: white;
             border: solid 1px $borderColor;
@@ -257,27 +257,48 @@ main.part4{
         }
         .wrapper-sellers {
             @extend .wrapper-categories;
+            margin-bottom: 0;
             .aside-item {
+                margin-top: 30px;
                 margin-bottom: 30px;
                 border: none;
                 &:hover {
                     box-shadow: none;
                 }
-            .reviews{
-                padding: 0;
-                .reviews-left{
-                    flex-grow: 0;
-                    justify-content: flex-start;
+                .title-price{
+                    border-bottom: none;
+                    padding: 20px 0;
                 }
-                .reviews-right{
-                    @extend .reviews-left;
-                }  
+                .reviews {
+                    padding: 0;
+                    border-bottom: solid 2px $borderColor;
+                    padding-bottom: 25px;
+                    .reviews-left{
+                        flex-grow: 0;
+                        justify-content: flex-start;
+                    }
+                    .reviews-right{
+                        @extend .reviews-left;
+                    }  
+                }
             }
+            a {
+                margin-top: 10px;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorGreen;
+                padding: 20px 60px;
+                font-family: $font;
+                color: white;
+                font-size: 15px;
+                font-weight: bold;
             }
         }
     }
     .main{
-        .sort{
+        .sort {
             padding: 15px;
             box-sizing: border-box;
             outline: solid 1px green;
@@ -287,8 +308,10 @@ main.part4{
             flex-wrap: wrap;
             .wrapper-item{
                 padding: 15px;
-                box-sizing: border-box;
             }
+        }
+        .number-page {
+            
         }
     }
 }
