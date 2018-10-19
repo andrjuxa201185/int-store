@@ -2460,7 +2460,7 @@ main.part4 {
       justify-content: space-between;
       align-items: center;
       padding: 15px 20px; }
-      main.part4 .item .reviews .reviews-left, main.part4 .item .reviews .reviews-right {
+      main.part4 .item .reviews .reviews-left, main.part4 .item .reviews .reviews-right, main.part4 .item aside .wrapper-sellers .aside-item .reviews .reviews-right, main.part4 aside .wrapper-sellers .aside-item .item .reviews .reviews-right {
         flex-grow: 1;
         display: flex;
         justify-content: center;
@@ -2521,33 +2521,33 @@ main.part4 {
       text-transform: capitalize;
       border-bottom: solid 1px #dedede;
       color: #263238; }
-    main.part4 aside .wrapper-categories, main.part4 aside .wrapper-price-range {
+    main.part4 aside .wrapper-categories, main.part4 aside .wrapper-price-range, main.part4 aside .wrapper-sellers {
       background-color: white;
       border: solid 1px #dedede;
       padding: 25px;
       margin-bottom: 30px; }
-      main.part4 aside .wrapper-categories ul li, main.part4 aside .wrapper-price-range ul li {
+      main.part4 aside .wrapper-categories ul li, main.part4 aside .wrapper-price-range ul li, main.part4 aside .wrapper-sellers ul li {
         padding-top: 30px; }
-        main.part4 aside .wrapper-categories ul li a, main.part4 aside .wrapper-price-range ul li a {
+        main.part4 aside .wrapper-categories ul li a, main.part4 aside .wrapper-price-range ul li a, main.part4 aside .wrapper-sellers ul li a {
           text-decoration: none;
           display: flex;
           justify-content: space-between; }
-          main.part4 aside .wrapper-categories ul li a span.name-categories, main.part4 aside .wrapper-price-range ul li a span.name-categories {
+          main.part4 aside .wrapper-categories ul li a span.name-categories, main.part4 aside .wrapper-price-range ul li a span.name-categories, main.part4 aside .wrapper-sellers ul li a span.name-categories {
             color: #263238;
             font-size: 15px;
             font-weight: bold; }
-            main.part4 aside .wrapper-categories ul li a span.name-categories .fa-chevron-right, main.part4 aside .wrapper-price-range ul li a span.name-categories .fa-chevron-right {
+            main.part4 aside .wrapper-categories ul li a span.name-categories .fa-chevron-right, main.part4 aside .wrapper-price-range ul li a span.name-categories .fa-chevron-right, main.part4 aside .wrapper-sellers ul li a span.name-categories .fa-chevron-right {
               font-size: 14px;
               color: #8bc34a;
               margin-right: 12px; }
-          main.part4 aside .wrapper-categories ul li a span.count-categories, main.part4 aside .wrapper-price-range ul li a span.count-categories {
+          main.part4 aside .wrapper-categories ul li a span.count-categories, main.part4 aside .wrapper-price-range ul li a span.count-categories, main.part4 aside .wrapper-sellers ul li a span.count-categories {
             font-size: 15px;
             color: #90a4ae; }
-            main.part4 aside .wrapper-categories ul li a span.count-categories::before, main.part4 aside .wrapper-price-range ul li a span.count-categories::before {
+            main.part4 aside .wrapper-categories ul li a span.count-categories::before, main.part4 aside .wrapper-price-range ul li a span.count-categories::before, main.part4 aside .wrapper-sellers ul li a span.count-categories::before {
               content: '(';
               color: #b0bec5;
               font-size: 16px; }
-            main.part4 aside .wrapper-categories ul li a span.count-categories::after, main.part4 aside .wrapper-price-range ul li a span.count-categories::after {
+            main.part4 aside .wrapper-categories ul li a span.count-categories::after, main.part4 aside .wrapper-price-range ul li a span.count-categories::after, main.part4 aside .wrapper-sellers ul li a span.count-categories::after {
               content: ')';
               color: #b0bec5;
               font-size: 16px; }
@@ -2610,6 +2610,16 @@ main.part4 {
       font-weight: bold; }
       main.part4 aside .wrapper-price-range .price-range a .fa {
         margin-right: 10px; }
+    main.part4 aside .wrapper-sellers .aside-item {
+      margin-bottom: 30px;
+      border: none; }
+      main.part4 aside .wrapper-sellers .aside-item:hover {
+        box-shadow: none; }
+      main.part4 aside .wrapper-sellers .aside-item .reviews {
+        padding: 0; }
+        main.part4 aside .wrapper-sellers .aside-item .reviews .reviews-left, main.part4 aside .wrapper-sellers .aside-item .reviews .reviews-right {
+          flex-grow: 0;
+          justify-content: flex-start; }
   main.part4 .main .sort {
     padding: 15px;
     box-sizing: border-box;
