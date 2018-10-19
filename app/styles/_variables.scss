@@ -1,0 +1,51 @@
+$greyColor: #707070; 
+$darkColor: #263238;
+$lightColor: #f4f6f5;
+$redColor: #e74c3c;
+$blueGreyColor: #455a64;
+$greenColor: #8bc34a;
+$blueColorFacebook: #6370b6;
+$blueColorTwiter: #64b5f6;
+$blueColorLinkdin: #4f71ce;
+$redColorPinterest: #d32f2f;
+$blueColor: #42a5f5;
+$LightGreyColor:  #dfdfdf;
+$bgColor: #ffffff;
+$OrangeColor: #ffb74d;
+
+@mixin font-style($fontSize, $fontColor) {
+    font-size: $fontSize;
+    color: $fontColor;
+}
+@mixin links() {
+    text-decoration: none;
+    &:hover {
+        color: chartreuse;
+    }
+}
+@mixin rectangle($widthSquare, $heightSquare, $bgColor) {
+    width: $widthSquare;
+    height: $heightSquare;
+    background-color: $bgColor; 
+    
+    cursor: pointer;
+}
+@mixin flag-relative() {
+    height: 20px;
+    width: 35px;           
+    position: relative; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+@mixin flag-absolut() {
+    content: "";
+    height: 0; width: 0;
+    position: absolute;
+    left: -2px;
+    top: 18px;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 10px solid $bgColor1;
+}

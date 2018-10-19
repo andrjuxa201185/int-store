@@ -4,14 +4,217 @@
 @import 'mixins';
 
 
-.container{
-    margin: 0 375px;
-    ul.breadcramb{
+section {
+    background-color: #f4f6f5;
+    width: 100%;
+    overflow: hidden;
+   
+
+    .container {
+      
+    .breadcrumb{
         margin: 50px 0;
         display: flex;
-        li {
-            @include font-style(15px, #263238);
+        width: 1170px;
+        
+            .first-page {
+                @include font-style(15px, $greyColor);
+                @include links();
+              
+                }
+            .first-page:after {
+                content: "-";
+                margin-left: 15px;
+            }
+            .second-page {
+                @include font-style(15px, #263238);
+                @include links();
+                margin-left: 20px; }
+            .second-page:after {
+                    content: "-";
+                    margin-left: 15px;
+                }
+            .last-page {
+                @include font-style(15px, #263238);
+                margin-left: 20px;
+                text-decoration: none;
+                cursor: default;
+            }
+    }
 
-        }
+
+.col-9 {
+    .item {
+        padding: 20px;
+        border: 1px solid #dfdfdf;
+    }
+   h2 {
+       @include font-style(30px, $darkColor);
+       margin: 40px 0;
+   }
+
+    p {
+        @include font-style(16px, $greyColor);
+        line-height: 1.5;
+        margin-bottom: 50px;
+    }
+
+   .space-between {
+    margin-bottom: 60px;}
+   .button1 {
+       @include font-style(16px, $lightColor);
+       @include rectangle(160px, 50px, $redColor);
+       margin-right: 20px;
+    }
+   .button2 {
+    @include font-style(16px, $lightColor);
+    @include rectangle(160px, 50px, $blueGreyColor);
+    margin-right: 20px;
+    }
+    .button3 {
+    @include font-style(16px, $lightColor);
+    @include rectangle(160px, 50px, $greenColor);
+   
+    }
+    .cub1 {
+        @include rectangle(50px, 50px, $blueColorFacebook);
+        @include font-style(18px, $lightColor);
+    }
+    .cub2 {
+        @include rectangle(50px, 50px, $blueColorTwiter);
+        @include font-style(18px, $lightColor);
+        margin-left: 5px;
+    }
+    .cub3 {
+        @include rectangle(50px, 50px, $blueColorLinkdin);
+        @include font-style(18px, $lightColor);
+        margin-left: 5px;
+    }
+    .cub4 {
+        @include rectangle(50px, 50px, $redColorPinterest);
+        @include font-style(18px, $lightColor);
+        margin-left: 5px;
     }
 }
+
+.col-3 {
+    .first-box {
+    h3 {
+        @include font-style(22px, $redColor);
+    } 
+    .margin {
+        margin: 36px 0;
+        align-items: center;
+        max-width: 210px;        
+     }
+     .line {
+         border-top: 1px solid #dfdfdf;
+     }
+    .button4 {
+        @include rectangle(210px, 50px, $greenColor);
+        @include font-style(16px, $lightColor);
+        .fa:after {
+            content: '  ';
+        }
+    }
+    .button5 {
+        @include rectangle(210px, 50px, $blueColor);
+        @include font-style(16px, $lightColor);
+        margin: 10px 0;
+    }
+    .button6 {
+        @include rectangle(210px, 50px, $blueGreyColor);
+        @include font-style(16px, $lightColor);
+    }
+}
+.second-box {
+    .square {
+    @include rectangle(70px, 70px, $LightGreyColor);
+    margin-right: 15px;    
+    }
+    .line {
+        border-top: 1px solid $LightGreyColor;
+        padding: 25px 0;
+    }
+    .p-style {
+        @include font-style(18px, $darkColor);
+    }
+    .squareSmall {
+        @include rectangle(95px, 30px, transparent);
+        border: 1px solid $LightGreyColor;
+        @include font-style(13px, $greyColor);      
+    } 
+    i {
+        color: #e74c3c;
+    }
+   
+    .flag {
+        margin-right: 10px;       
+        background-color: #e74c3c;
+        color: #dfdfdf;
+        width: 20px;
+        height: 20px;
+    }
+    .flag:after {
+            @include flag-absolut(); 
+            border-top: 10px solid orange;           
+        }
+    
+    }  
+.third-box {
+    .fa {
+        @include font-style(20px, $LightGreyColor);
+    }
+}
+}
+   
+  
+.item1 {
+    padding: 20px;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    h4 {
+        @include font-style(20px, $darkColor);
+        margin-bottom: 30px;
+     }
+}
+
+.nav {
+    list-style: none;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc; 
+    li { 
+        border-right: 1px solid #263238; 
+        a{
+        @include font-style(15px, #263238);
+        @include links();
+        }
+    }}
+
+
+.flex-column {
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+} 
+.d-flex {
+    display: flex;
+}
+.bgWhite {
+    background-color: $bgColor;
+}
+
+.list-nav {
+    @include rectangle(80px, 25px, none);
+    border: 1px solid $greyColor;
+    .list-nav-style { 
+       @include font-style(13px, $greyColor);
+    .select {
+        color: $greenColor;
+   } 
+  }
+}
+}}

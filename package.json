@@ -10,12 +10,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.0",
+    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-watch": "^5.0.1",
     "run-sequence": "^2.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrjuxa201185/int-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrjuxa201185/int-store/issues"
+  },
+  "homepage": "https://github.com/andrjuxa201185/int-store#readme"
 }
