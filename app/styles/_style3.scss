@@ -1,6 +1,20 @@
 main.ruslan {
     box-sizing: border-box;
 
+    .green {
+        color: $colorGreen;
+    }
+
+    i.fa-bolt {
+        top: 10px;
+        left: 15px;
+        position: absolute;
+        z-index: 3;
+        color: $colorWhite;
+        font-size: 18px; 
+    }
+
+
 
     .section-1 {
         background: #f4f6f5;
@@ -33,7 +47,8 @@ main.ruslan {
             margin: 6px;
             font-weight: 700;
             &:hover {
-                box-shadow: 0 0 10px 5px #dce3e8;
+                box-shadow: $boxShadow;
+                
             }
         }
 
@@ -59,7 +74,8 @@ main.ruslan {
         color: $textBlack;
         font-weight: 600;
         &:hover {
-            box-shadow: 0 0 10px 5px #dce3e8;
+            box-shadow: $boxShadow;
+            cursor: pointer;
         }
     }
 
@@ -70,22 +86,25 @@ main.ruslan {
         // padding: 0 30px 30px 30px;
     }
 
-
     .col-3 {
-        width: 440px;
-        height: 410px;
+        padding: 15px;
+    }
+
+    .square-block {
+        // width: 440px;
+        // height: 410px;
         position: relative;
         background: white;
         border: $borderForCol;
-        // box-shadow: 0 0 5px 1px #dce3e8;
-        margin: 15px;
+        // margin: 15px;
+        // padding: 15px;
         &:hover {
-            box-shadow: 0 0 10px 5px #dce3e8;
+            box-shadow: $boxShadow;
+            cursor: pointer;
         }
     }
 
     .one {
-        // border: $borderForCol;
         img {
             width: 100%;
         }
@@ -100,12 +119,12 @@ main.ruslan {
         left: 0;
     }
 
-    .triangle i {
-        display: flex;
-        margin-bottom: 20px;
-        background: transparent;
-        color: $colorWhite;
-    }
+    // .triangle i {
+    //     display: flex;
+    //     margin-bottom: 20px;
+    //     background: transparent;
+    //     color: $colorWhite;
+    // }
 
 
     .two {
@@ -210,15 +229,189 @@ main.ruslan {
     
 
     .four-square {
-        padding-bottom: 210px;
+        padding-bottom: 70px;
         }
     }
 
     .four-circle {
         display: flex;
-        justify-content: center;   
+        justify-content: center;
+        padding: 0 9px;
+        padding-bottom: 120px;
+
+        .grey {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: $textLightGrey;
+            margin: 4px;
+        }
+
+        .green {
+            background: $colorGreen; 
+        }
     }
 
+
+
+    .section-3 {
+        background: $textBlack;
+
+        h2 {
+            color: $colorWhite;
+        }
+
+        h4 {
+            font-size: 24px;
+            color: $colorWhite;
+            font-weight: bold;
+            padding-top: 35px;
+        }
+
+        h4.green {
+            color: $colorGreen;
+        }
+
+        .circle {
+            width: 113px;
+            height: 113px;
+            background: #b5b5b5;
+
+            &.lighter {
+                background: #d4d4d4;
+            }
+
+            &:hover {
+                background: $colorGreen;
+                cursor: pointer;
+            }
+        }
+
+        p {
+            color: $textLightGrey;
+            font-size: 15px;
+            padding-top: 35px;
+            line-height: 1.6em;
+            text-align: center; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .col-4 {
+            padding: 90px 0 120px 0;
+            
+            .three-circle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 40px 0 40px;
+            }
+              
+        }
+
+    }
+
+    
+    .section-4 {
+        background: #f4f6f5;
+
+        .col-12 {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .block-4 {
+            width: 1104px;
+            height: 440px;
+            margin: 130px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: $boxShadow;
+            background-image: url(../images/for_03_main-section-4.png)
+        }
+
+        .green {
+            background: $colorGreen; 
+            width: 650px;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h4 {
+                color: $colorWhite;
+                font-size: 30px;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            
+        }
+
+        .last-tabs {
+            padding: 20px 0 20px 45px;
+
+            a {
+                font-size: 18px;
+                color: $textBlack;
+                padding: 25px 40px;
+                
+            }
+        }
+    }
+
+    .section-5 {
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col-4 {
+            padding-top: 60px;
+
+            
+            
+
+            img {
+                width: 100%;
+            }
+
+            .wrapper {
+                padding: 0 15px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .text {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $textBlack;
+                    background: #f8f8f8;
+                    text-align: center;
+                    padding: 40px 0;
+                }
+            }
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+
+
+
+
+    }
 }
 
 
