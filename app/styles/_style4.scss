@@ -259,6 +259,12 @@ main.part4{
             @extend .wrapper-categories;
             margin-bottom: 0;
             .aside-item {
+                &:last-of-type {
+                    margin-bottom: 0;
+                    .reviews{
+                        border-bottom: none;
+                    }
+                }
                 margin-top: 30px;
                 margin-bottom: 30px;
                 border: none;
@@ -298,10 +304,9 @@ main.part4{
         }
     }
     .main{
-        .sort {
-            padding: 15px;
-            box-sizing: border-box;
-            outline: solid 1px green;
+        position: relative;
+        .wrapper-sort {
+            padding: 0 15px;
         }
         .items {
             display: flex;
@@ -311,7 +316,29 @@ main.part4{
             }
         }
         .number-page {
-            
+            display: flex;
+            padding: 0 15px;
+            position: absolute;
+            bottom: 0;
+            a {
+                color: $textGrey;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                margin-right: 7px;
+                font-size: 16px;
+                font-weight: bold;
+                width: 40px;
+                height: 40px;
+                box-shadow: 0 2px 1px 0px $borderColor;
+                &:first-child{
+                    background-color: #e74c3c;
+                    color: white;
+                }
+            }
+
         }
     }
 }
