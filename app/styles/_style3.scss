@@ -388,8 +388,10 @@ main.ruslan {
             .wrapper {
                 padding: 0 15px;
 
-                &:hover {
-                    cursor: pointer;
+                img {
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 .text {
@@ -399,6 +401,10 @@ main.ruslan {
                     background: #f8f8f8;
                     text-align: center;
                     padding: 40px 0;
+                    
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
