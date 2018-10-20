@@ -82,7 +82,7 @@
                     </div>
                     <div class="cost">
                         <span>$0</span>
-                        <span>$600</span>
+                        <span id="spanPrice">$600</span>
                     </div>
                     <a href=""><i class="fa fa-search" aria-hidden="true"></i>
                         Search</a>
@@ -188,7 +188,30 @@
 
         <div class="col-9 main">
             <div class="wrapper-sort col-12">
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                <form class="sort">
+                    <div class="sort-select">
+                        <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                        <select name="sort" id="s">
+                            <option value="new" selected>
+                                <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                                Sort by: New Items
+                            </option>
+                            <option value="old">
+                                <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>Sort by: Old Items
+                            </option>
+                        </select>
+                        <i class="fa fa-sort" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="btn-submit">
+                        <button type="submit" name="sort" value="large" class="active">
+                            <i class="fa fa-th-large" aria-hidden="true"></i>
+                        </button>
+                        <button type="submit" name="sort" value="list">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
 
             <section class="items col-12">
@@ -579,7 +602,7 @@
             </section>
 
             <div class="number-page">
-                <a href="">1</a>
+                <a href="" class="active">1</a>
                 <a href="">2</a>
                 <a href="">3</a>
                 <a href="">4</a>
@@ -588,7 +611,9 @@
     </div>
     </main>
         <script>
-            let range = document.getElementById('rangeInput')
+            let range = document.getElementById('rangeInput');
+            let cost = document.getElementsByClassName('cost')[0];
+            let price = document.getElementById('spanPrice')
             range.style.background = "-webkit-linear-gradient(left ,#37474f 0%,#37474f 50%,#f2f5f8 50%, #f2f5f8 100%)";
             range.addEventListener("input", function(){
                 let val = range.value;
