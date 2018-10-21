@@ -8,6 +8,10 @@ git clone https://github.com/andrjuxa201185/int-store.git
 
 npm install
 
+## Run the project:
+
+gulp run
+
 ### TO DO:
 
 Каждый кодит свой 'part.html' и '_style.scss'. 
