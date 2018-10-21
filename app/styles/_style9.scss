@@ -1,10 +1,10 @@
 @import "reset.scss";
 @import "font-awesome.scss";
 @import "variables";
-@import 'mixins';
 
 
-section {
+
+.part9 {
     background-color: #f4f6f5;
     width: 100%;
     overflow: hidden;
@@ -47,19 +47,54 @@ section {
     .item {
         padding: 20px;
         border: 1px solid #dfdfdf;
+        margin-bottom:30px;
     }
    h2 {
        @include font-style(30px, $darkColor);
        margin: 40px 0;
    }
-
+   h4 {
+    @include font-style(20px, $darkColor);
+   }
     p {
         @include font-style(16px, $greyColor);
         line-height: 1.5;
         margin-bottom: 50px;
     }
+    .margin-left-col-4 {
+        margin-left: 30px;
+    } 
+    .margin-bottom-col-4 {
+        margin-bottom: 30px;
+    }
+    .between-col-4 {
+        width: 30px;
+        
+    }
+    .card-margin-bottom {
+        margin-bottom: 125px;
+    }
 
-   .space-between {
+    .cards {
+        
+        .square {
+        @include rectangle(100px, 90px, $LightGreyColor);
+        }
+        p {
+        @include font-style(12px, $greenColor);
+        line-height: 1;
+        margin: 10px 0;
+        }
+        h5 {
+        @include font-style(14px, $greyColor);
+        }
+        .div-style {
+            justify-content: center;
+            margin-left: 20px;
+        }
+    }
+    
+   .margin-bottom60 {
     margin-bottom: 60px;}
    .button1 {
        @include font-style(16px, $lightColor);
@@ -95,7 +130,49 @@ section {
         @include font-style(18px, $lightColor);
         margin-left: 5px;
     }
+   .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    a {
+        @include font-style(16px, $greyBlueColor);
+        text-decoration: none;
+    }
+    .nav-item {
+        border: 1px solid $LightGreyColor;
+        text-align: center;
+        padding: 20px 0;
+    }
+   
+     .active {       
+        border-bottom: 1px solid $greenColor;
+        h5 {
+             @include font-style(16px, $darkColor);
+        }
+    }
+    }
+.tab-content {
+        padding: 40px 0 70px 30px;
+        margin-bottom: 55px;
+        border: 1px solid $LightGreyColor;
+        border-top: none;
+        background-color: $bgColor;
+        li {
+            margin: 10px 0;
+        }
+        .fa {
+            @include font-style(16px, $greenColor);
+            margin-right: 10px;
+        }
+        span {
+            @include font-style(16px, $greyBlueColor);
+        }
+    }
+.articles {
+    .first-row {
+        margin-right: 40px;
+    } 
 }
+}
+
 
 .col-3 {
     .first-box {
@@ -145,25 +222,91 @@ section {
         @include font-style(13px, $greyColor);      
     } 
     i {
-        color: #e74c3c;
+        @include font-style(20px, $bgColor);    
+        position: absolute;  
+        right: 9px;
+        bottom: -4px;
+        z-index: 1;
+    }
+    .margin-bottom {
+        margin-bottom: 30px;
     }
    
     .flag {
+        @include flag-relative();
         margin-right: 10px;       
-        background-color: #e74c3c;
-        color: #dfdfdf;
-        width: 20px;
-        height: 20px;
+        background-color: $OrangeColor;               
     }
     .flag:after {
             @include flag-absolut(); 
-            border-top: 10px solid orange;           
-        }
-    
+            border-top: 15px solid $OrangeColor;           
+    }
+    .flag1 {
+        @include flag-relative();
+        margin-right: 10px;       
+        background-color: $OrangeColor2;               
+    }
+    .flag1:after {
+            @include flag-absolut(); 
+            border-top: 15px solid $OrangeColor2;           
+    }
+    .flag2 {
+        @include flag-relative();
+        margin-right: 10px;       
+        background-color: $BlueColor2;               
+    }
+    .flag2:after {
+            @include flag-absolut(); 
+            border-top: 15px solid $BlueColor2;           
+    }
+    .flag3 {
+        @include flag-relative();
+        margin-right: 10px;       
+        background-color: $greenColor2;               
+    }
+    .flag3:after {
+            @include flag-absolut(); 
+            border-top: 15px solid $greenColor2;           
+    }
+    .flag4 {
+        @include flag-relative();
+        margin-right: 10px;       
+        background-color: $LightGreyColor;               
+    }
+    .flag4:after {
+            @include flag-absolut(); 
+            border-top: 15px solid $LightGreyColor;           
+    }
+
+
     }  
 .third-box {
-    .fa {
-        @include font-style(20px, $LightGreyColor);
+    i.fa {
+        @include font-style(20px, $greyBlueColor);
+       
+    }
+    h5 {
+        @include font-style(20px, $darkColor); 
+        margin: 0 20px;
+    }
+    p {
+        @include font-style(16px, $greyBlueColor);
+    }
+}
+.four-box {
+    p {
+        @include font-style(14px, $greyColor);
+        margin: 30px 0;
+        line-height: 1.5;
+        
+    }
+    strong {
+        color: $darkColor;
+        font-weight: bold;
+    }
+    .line {
+        border-top: 1px solid $LightGreyColor;
+        margin: 30px 0;
     }
 }
 }
@@ -180,20 +323,6 @@ section {
      }
 }
 
-.nav {
-    list-style: none;
-    justify-content: space-around;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc; 
-    li { 
-        border-right: 1px solid #263238; 
-        a{
-        @include font-style(15px, #263238);
-        @include links();
-        }
-    }}
-
-
 .flex-column {
     flex-direction: column;
 }
@@ -206,15 +335,22 @@ section {
 .bgWhite {
     background-color: $bgColor;
 }
-
+.align-it {
+    align-items: baseline;
+}
 .list-nav {
     @include rectangle(80px, 25px, none);
-    border: 1px solid $greyColor;
-    .list-nav-style { 
-       @include font-style(13px, $greyColor);
+    border: 1px solid $LightGreyColor;
+    color: $greyColor;
     .select {
         color: $greenColor;
    } 
+
+    .option {
+        margin: 5px;
+    }
+    
+    
   }
 }
-}}
+}

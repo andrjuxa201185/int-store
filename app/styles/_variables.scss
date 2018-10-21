@@ -12,6 +12,10 @@ $blueColor: #42a5f5;
 $LightGreyColor:  #dfdfdf;
 $bgColor: #ffffff;
 $OrangeColor: #ffb74d;
+$OrangeColor2: #f4511e;
+$BlueColor2: #00bcd4;
+$greenColor2: #66bb6a;
+$greyBlueColor: #70838d;
 
 @mixin font-style($fontSize, $fontColor) {
     font-size: $fontSize;
@@ -20,14 +24,15 @@ $OrangeColor: #ffb74d;
 @mixin links() {
     text-decoration: none;
     &:hover {
-        color: chartreuse;
+        color: $greenColor;
     }
 }
 @mixin rectangle($widthSquare, $heightSquare, $bgColor) {
     width: $widthSquare;
     height: $heightSquare;
     background-color: $bgColor; 
-    
+    border: none;
+    outline: none;
     cursor: pointer;
 }
 @mixin flag-relative() {
@@ -43,9 +48,9 @@ $OrangeColor: #ffb74d;
     content: "";
     height: 0; width: 0;
     position: absolute;
-    left: -2px;
-    top: 18px;
+    left: 0px;
+    top: 20px;
     border-left: 17px solid transparent;
     border-right: 17px solid transparent;
-    border-top: 10px solid $bgColor1;
+   
 }
