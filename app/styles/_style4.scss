@@ -50,7 +50,7 @@ main.part4{
                display: flex;
                justify-content: space-between;
                align-items: center;
-               padding: 15px 20px;
+               padding: 20px;
                .reviews-left{
                    flex-grow: 1;
                    display: flex;
@@ -145,11 +145,17 @@ main.part4{
             margin-bottom: 30px;
             ul {
                 li {
-                    padding-top: 30px;
+                    padding-top: 27px;
+                    &:hover {
+                        .fa-chevron-right {
+                            transform: scale(1.5);
+                        }
+                    }
                     a{
                         text-decoration: none;
                         display: flex;
                         justify-content: space-between;
+                        
                         span.name-categories{
                             color: #263238;
                             font-size: 15px;
@@ -235,7 +241,6 @@ main.part4{
                     }
                     #spanPrice {
                         position: absolute;
-                        left: 40%;
                     }
                  }
                   a {
@@ -250,6 +255,12 @@ main.part4{
                       color: white;
                       font-size: 15px;
                       font-weight: bold;
+                      transition: all .3s ease-in-out;
+                      border: solid 1px $colorGreen;
+                      &:hover {
+                          background-color: white;
+                          color: $colorGreen;
+                      }
                       .fa {
                           margin-right: 10px;
                       }
@@ -301,6 +312,12 @@ main.part4{
                 color: white;
                 font-size: 15px;
                 font-weight: bold;
+                transition: all .3s ease-in-out;
+                border: solid 1px $colorGreen;
+                &:hover {
+                    background-color: white;
+                    color: $colorGreen;
+                }
             }
         }
     }
@@ -308,6 +325,7 @@ main.part4{
         position: relative;
         .wrapper-sort {
             padding: 0 15px;
+            margin-bottom: 15px;
             .sort {
                 background-color: white;
                 border: solid 1px $borderColor;
@@ -324,6 +342,7 @@ main.part4{
                         -webkit-appearance: none;
                         outline: none;
                         padding: 0 12px;
+                        font-weight: bold;
                     }
                 }
                 .btn-submit {

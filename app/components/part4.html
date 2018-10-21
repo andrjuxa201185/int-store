@@ -612,13 +612,16 @@
     </main>
         <script>
             let range = document.getElementById('rangeInput');
-            let cost = document.getElementsByClassName('cost')[0];
-            let price = document.getElementById('spanPrice')
+            let price = document.getElementById('spanPrice');
+
             range.style.background = "-webkit-linear-gradient(left ,#37474f 0%,#37474f 50%,#f2f5f8 50%, #f2f5f8 100%)";
+            
             range.addEventListener("input", function(){
                 let val = range.value;
                 range.style.background = '-webkit-linear-gradient(left ,#37474f 0%,#37474f '+(val*100)/1200+'%,#f2f5f8 '+val*100/1200+'%, #f2f5f8 100%)';
-            })
+                price.style.left = val*100/1200*2 + "px";
+                price.innerText = "$" + val;
+            });
         </script>
     //= ./parts/footer.html
 </body>
