@@ -6,6 +6,7 @@ const runSequence = require('run-sequence');
 const watch = require('gulp-watch');
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
+const minifyCss = require('gulp-minify-css'); //сжимает css
 
 
 gulp.task('html', function () {
@@ -38,8 +39,10 @@ gulp.task('fonts', function(){
 
 gulp.task('css', function(){
     return gulp.src('./app/styles/css.css')
+    .pipe(minifyCss()) // минифицирование css
     .pipe(gulp.dest('build/css/'))
     .pipe(reload({stream: true}));
+
 });
 
 gulp.task('reload-css', function(){
@@ -59,7 +62,7 @@ gulp.task('browser-sync', function(){
 gulp.task('watch',function(){
     gulp.watch('app/components/**/*', ['html']);
     gulp.watch('app/styles/*.scss', ['reload-css']);
-    gulp.watch('app/images/**/*', ['images']);
+    // gulp.watch('app/images/**/*', ['images']);
 });
 
 gulp.task('run', function(){

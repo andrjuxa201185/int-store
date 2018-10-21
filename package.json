@@ -12,6 +12,10 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
+<<<<<<< HEAD
+=======
+    "gulp-clean-css": "^3.10.0",
+>>>>>>> 2741466653ee6a3248875199467470c6ff2bc0a1
     "gulp-minify-css": "^1.2.4",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.1",
