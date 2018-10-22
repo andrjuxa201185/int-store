@@ -1,3 +1,64 @@
+$greyColor: #263238;
+$darkColor: #263238;
+$lightColor: #f4f6f5;
+$redColor: #e74c3c;
+$blueGreyColor: #455a64;
+$greenColor: #8bc34a;
+$blueColorFacebook: #6370b6;
+$blueColorTwiter: #64b5f6;
+$blueColorLinkdin: #4f71ce;
+$redColorPinterest: #d32f2f;
+$blueColor: #42a5f5;
+$LightGreyColor:  #dfdfdf;
+$bgColor: #ffffff;
+$OrangeColor: #ffb74d;
+$OrangeColor2: #f4511e;
+$BlueColor2: #00bcd4;
+$greenColor2: #66bb6a;
+$greyBlueColor: #70838d;
+
+@mixin font-style($fontSize, $fontColor) {
+    font-size: $fontSize;
+    color: $fontColor;   
+}
+@mixin links() {
+    text-decoration: none;
+    &:hover {
+        color: $greenColor;
+    }
+}
+@mixin rectangle($widthSquare, $heightSquare, $bgColor) {
+    width: $widthSquare;
+    height: $heightSquare;
+    background-color: $bgColor; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+@mixin flag-relative() {
+    height: 20px;
+    width: 35px;           
+    position: relative; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+@mixin flag-absolut() {
+    content: "";
+    height: 0; width: 0;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+   
+}
+@mixin bold-roboto() {
+    font-family: $font;
+    font-weight: bolder;
+}
+
 $textBlack: #263238;
 $textGrey: #263238;
 $textLightGrey: #90a4ae;
@@ -8,3 +69,4 @@ $font: 'Roboto', sans-serif;
 $borderColor: #dedede;
 $colorGreen: #8bc34a;
 $boxShadow: 0 10px 30px 5px rgba(128, 128, 128, 0.288);
+
