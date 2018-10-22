@@ -64,9 +64,11 @@
     @include bold-roboto();
    }
     p {
-        @include font-style(16px, $greyColor);
+        @include font-style(16px, $greyBlueColor);
         line-height: 1.5;
         margin-bottom: 50px;
+        font-family: $font;
+        
     }
     .margin-left-col-4 {
         margin-left: 30px;
@@ -91,6 +93,7 @@
         @include font-style(12px, $greenColor);
         line-height: 1;
         margin: 10px 0;
+        font-family: $font;
         }
         h5 {
         @include font-style(14px, $greyColor);
@@ -108,15 +111,19 @@
        @include font-style(16px, $lightColor);
        @include rectangle(160px, 50px, $redColor);
        margin-right: 20px;
+       font-family: $font;
+       
     }
    .button2 {
     @include font-style(16px, $lightColor);
     @include rectangle(160px, 50px, $blueGreyColor);
     margin-right: 20px;
+    font-family: $font;
     }
     .button3 {
     @include font-style(16px, $lightColor);
     @include rectangle(160px, 50px, $greenColor);
+    font-family: $font;
    
     }
     .cub1 {
@@ -143,6 +150,7 @@
     a {
         @include font-style(16px, $greyBlueColor);
         text-decoration: none;
+        font-family: $font;
     }
     .nav-item {
         border: 1px solid $LightGreyColor;
@@ -165,14 +173,16 @@
         border-top: none;
         background-color: $bgColor;
         li {
-            margin: 10px 0;
+            margin: 20px 0;
         }
         .fa {
             @include font-style(16px, $greenColor);
             margin-right: 10px;
+            font-weight: bolder;
         }
         span {
             @include font-style(16px, $greyBlueColor);
+            font-family: $font;
         }
     }
 .articles {
@@ -200,18 +210,24 @@
     .button4 {
         @include rectangle(210px, 50px, $greenColor);
         @include font-style(16px, $lightColor);
-        .fa:after {
-            content: '  ';
+        font-family: $font;
+        i.fa.fa-shopping-cart {
+            margin-right: 10px;
         }
     }
     .button5 {
         @include rectangle(210px, 50px, $blueColor);
         @include font-style(16px, $lightColor);
+        font-family: $font;
         margin: 10px 0;
+        i.fa.fa-heart-o {
+            margin-right: 10px;
+        }
     }
     .button6 {
         @include rectangle(210px, 50px, $blueGreyColor);
         @include font-style(16px, $lightColor);
+        font-family: $font;      
     }
 }
 .second-box {
@@ -225,11 +241,13 @@
     }
     .p-style {
         @include font-style(18px, $darkColor);
+        @include bold-roboto();
     }
     .squareSmall {
         @include rectangle(95px, 30px, transparent);
         border: 1px solid $LightGreyColor;
-        @include font-style(13px, $greyColor);      
+        @include font-style(13px, $greyColor);
+        font-family: $font;      
     } 
     i {
         @include font-style(20px, $bgColor);    
@@ -302,14 +320,15 @@
     }
     p {
         @include font-style(16px, $greyBlueColor);
+        font-family: $font;
     }
 }
 .four-box {
     p {
-        @include font-style(14px, $greyColor);
-        margin: 30px 0;
+        @include font-style(14px, $greyBlueColor);
+        margin: 20px 0;
         line-height: 1.5;
-        
+        font-family: $font;
     }
     strong {
         color: $darkColor;
@@ -352,6 +371,7 @@
 }
 .list-nav {
     @include rectangle(80px, 25px, none);
+    font-family: $font;
     border: 1px solid $LightGreyColor;
     color: $greyColor;
     .select {

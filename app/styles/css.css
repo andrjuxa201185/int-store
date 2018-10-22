@@ -5390,9 +5390,10 @@ table {
     font-weight: bolder; }
   .part9 .container .col-9 p {
     font-size: 16px;
-    color: #263238;
+    color: #70838d;
     line-height: 1.5;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif; }
   .part9 .container .col-9 .margin-left-col-4 {
     margin-left: 30px; }
   .part9 .container .col-9 .margin-bottom-col-4 {
@@ -5412,7 +5413,8 @@ table {
     font-size: 12px;
     color: #8bc34a;
     line-height: 1;
-    margin: 10px 0; }
+    margin: 10px 0;
+    font-family: "Roboto", sans-serif; }
   .part9 .container .col-9 .cards h5 {
     font-size: 14px;
     color: #263238;
@@ -5432,7 +5434,8 @@ table {
     border: none;
     outline: none;
     cursor: pointer;
-    margin-right: 20px; }
+    margin-right: 20px;
+    font-family: "Roboto", sans-serif; }
   .part9 .container .col-9 .button2 {
     font-size: 16px;
     color: #f4f6f5;
@@ -5442,7 +5445,8 @@ table {
     border: none;
     outline: none;
     cursor: pointer;
-    margin-right: 20px; }
+    margin-right: 20px;
+    font-family: "Roboto", sans-serif; }
   .part9 .container .col-9 .button3 {
     font-size: 16px;
     color: #f4f6f5;
@@ -5451,7 +5455,8 @@ table {
     background-color: #8bc34a;
     border: none;
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: "Roboto", sans-serif; }
   .part9 .container .col-9 .cub1 {
     width: 50px;
     height: 50px;
@@ -5496,7 +5501,8 @@ table {
     .part9 .container .col-9 .nav-tabs a {
       font-size: 16px;
       color: #70838d;
-      text-decoration: none; }
+      text-decoration: none;
+      font-family: "Roboto", sans-serif; }
     .part9 .container .col-9 .nav-tabs .nav-item {
       border: 1px solid #dfdfdf;
       text-align: center;
@@ -5515,14 +5521,16 @@ table {
     border-top: none;
     background-color: #ffffff; }
     .part9 .container .col-9 .tab-content li {
-      margin: 10px 0; }
+      margin: 20px 0; }
     .part9 .container .col-9 .tab-content .fa {
       font-size: 16px;
       color: #8bc34a;
-      margin-right: 10px; }
+      margin-right: 10px;
+      font-weight: bolder; }
     .part9 .container .col-9 .tab-content span {
       font-size: 16px;
-      color: #70838d; }
+      color: #70838d;
+      font-family: "Roboto", sans-serif; }
   .part9 .container .col-9 .articles .first-row {
     margin-right: 40px; }
   .part9 .container .col-3 .first-box h3 {
@@ -5544,9 +5552,10 @@ table {
     outline: none;
     cursor: pointer;
     font-size: 16px;
-    color: #f4f6f5; }
-    .part9 .container .col-3 .first-box .button4 .fa:after {
-      content: '  '; }
+    color: #f4f6f5;
+    font-family: "Roboto", sans-serif; }
+    .part9 .container .col-3 .first-box .button4 i.fa.fa-shopping-cart {
+      margin-right: 10px; }
   .part9 .container .col-3 .first-box .button5 {
     width: 210px;
     height: 50px;
@@ -5556,7 +5565,10 @@ table {
     cursor: pointer;
     font-size: 16px;
     color: #f4f6f5;
+    font-family: "Roboto", sans-serif;
     margin: 10px 0; }
+    .part9 .container .col-3 .first-box .button5 i.fa.fa-heart-o {
+      margin-right: 10px; }
   .part9 .container .col-3 .first-box .button6 {
     width: 210px;
     height: 50px;
@@ -5565,7 +5577,8 @@ table {
     outline: none;
     cursor: pointer;
     font-size: 16px;
-    color: #f4f6f5; }
+    color: #f4f6f5;
+    font-family: "Roboto", sans-serif; }
   .part9 .container .col-3 .second-box .square {
     width: 70px;
     height: 70px;
@@ -5579,7 +5592,9 @@ table {
     padding: 25px 0; }
   .part9 .container .col-3 .second-box .p-style {
     font-size: 18px;
-    color: #263238; }
+    color: #263238;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder; }
   .part9 .container .col-3 .second-box .squareSmall {
     width: 95px;
     height: 30px;
@@ -5589,7 +5604,8 @@ table {
     cursor: pointer;
     border: 1px solid #dfdfdf;
     font-size: 13px;
-    color: #263238; }
+    color: #263238;
+    font-family: "Roboto", sans-serif; }
   .part9 .container .col-3 .second-box i {
     font-size: 20px;
     color: #ffffff;
@@ -5705,12 +5721,14 @@ table {
     font-weight: bolder; }
   .part9 .container .col-3 .third-box p {
     font-size: 16px;
-    color: #70838d; }
+    color: #70838d;
+    font-family: "Roboto", sans-serif; }
   .part9 .container .col-3 .four-box p {
     font-size: 14px;
-    color: #263238;
-    margin: 30px 0;
-    line-height: 1.5; }
+    color: #70838d;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif; }
   .part9 .container .col-3 .four-box strong {
     color: #263238;
     font-weight: bolder; }
@@ -5745,6 +5763,7 @@ table {
     border: none;
     outline: none;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
     border: 1px solid #dfdfdf;
     color: #263238; }
     .part9 .container .list-nav .select {
