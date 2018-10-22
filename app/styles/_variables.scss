@@ -19,7 +19,7 @@ $greyBlueColor: #70838d;
 
 @mixin font-style($fontSize, $fontColor) {
     font-size: $fontSize;
-    color: $fontColor;
+    color: $fontColor;   
 }
 @mixin links() {
     text-decoration: none;
@@ -53,6 +53,10 @@ $greyBlueColor: #70838d;
     border-left: 17px solid transparent;
     border-right: 17px solid transparent;
    
+}
+@mixin bold-roboto() {
+    font-family: $font;
+    font-weight: bolder;
 }
 
 $textBlack: #263238;

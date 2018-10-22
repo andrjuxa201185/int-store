@@ -1,0 +1,41 @@
+@mixin font-style($fontSize, $fontColor) {
+    font-size: $fontSize;
+    color: $fontColor;   
+}
+@mixin links() {
+    text-decoration: none;
+    &:hover {
+        color: $greenColor;
+    }
+}
+@mixin rectangle($widthSquare, $heightSquare, $bgColor) {
+    width: $widthSquare;
+    height: $heightSquare;
+    background-color: $bgColor; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+@mixin flag-relative() {
+    height: 20px;
+    width: 35px;           
+    position: relative; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+@mixin flag-absolut() {
+    content: "";
+    height: 0; width: 0;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+   
+}
+@mixin bold-roboto() {
+    font-family: $font;
+    font-weight: bolder;
+}

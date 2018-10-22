@@ -1,6 +1,7 @@
 @import "reset.scss";
 @import "font-awesome.scss";
 @import "variables";
+@import 'mixin';
 
 
 
@@ -18,8 +19,9 @@
         width: 1170px;
         
             .first-page {
-                @include font-style(15px, $greyColor);
+                @include font-style(15px, $greyBlueColor);
                 @include links();
+                @include bold-roboto();
               
                 }
             .first-page:after {
@@ -27,17 +29,20 @@
                 margin-left: 15px;
             }
             .second-page {
-                @include font-style(15px, #263238);
+                @include font-style(15px,$greyColor);
                 @include links();
-                margin-left: 20px; }
+                margin-left: 20px;
+                @include bold-roboto();
+             }
             .second-page:after {
                     content: "-";
                     margin-left: 15px;
                 }
             .last-page {
-                @include font-style(15px, #263238);
+                @include font-style(15px, $greyColor);
                 margin-left: 20px;
                 text-decoration: none;
+                @include bold-roboto();
                 cursor: default;
             }
         }
@@ -52,9 +57,11 @@
    h2 {
        @include font-style(30px, $darkColor);
        margin: 40px 0;
+       @include bold-roboto();
    }
    h4 {
     @include font-style(20px, $darkColor);
+    @include bold-roboto();
    }
     p {
         @include font-style(16px, $greyColor);
@@ -87,6 +94,7 @@
         }
         h5 {
         @include font-style(14px, $greyColor);
+        @include bold-roboto();
         }
         .div-style {
             justify-content: center;
@@ -146,6 +154,7 @@
         border-bottom: 1px solid $greenColor;
         h5 {
              @include font-style(16px, $darkColor);
+             @include bold-roboto();
         }
     }
     }
@@ -178,6 +187,7 @@
     .first-box {
     h3 {
         @include font-style(22px, $redColor);
+        @include bold-roboto();
     } 
     .margin {
         margin: 36px 0;
@@ -288,6 +298,7 @@
     h5 {
         @include font-style(20px, $darkColor); 
         margin: 0 20px;
+        @include bold-roboto();
     }
     p {
         @include font-style(16px, $greyBlueColor);
@@ -302,7 +313,7 @@
     }
     strong {
         color: $darkColor;
-        font-weight: bold;
+        font-weight: bolder;
     }
     .line {
         border-top: 1px solid $LightGreyColor;
@@ -320,6 +331,7 @@
     h4 {
         @include font-style(20px, $darkColor);
         margin-bottom: 30px;
+        @include bold-roboto();
      }
 }
 
