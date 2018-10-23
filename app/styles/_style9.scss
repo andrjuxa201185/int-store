@@ -1,0 +1,388 @@
+// @import "reset.scss";
+// @import "font-awesome.scss";
+// @import "variables";
+// @import 'mixin';
+
+
+
+.part9 {
+    background-color: #f4f6f5;
+    width: 100%;
+    overflow: hidden;
+   
+
+    .container {
+      
+    .bread-crumb{
+        margin: 50px 0;
+        display: flex;
+        width: 1170px;
+        
+            .first-page {
+                @include font-style(15px, $greyBlueColor);
+                @include links();
+                @include bold-roboto();
+              
+                }
+            .first-page:after {
+                content: "-";
+                margin-left: 15px;
+            }
+            .second-page {
+                @include font-style(15px,$greyColor);
+                @include links();
+                margin-left: 20px;
+                @include bold-roboto();
+             }
+            .second-page:after {
+                    content: "-";
+                    margin-left: 15px;
+                }
+            .last-page {
+                @include font-style(15px, $greyColor);
+                margin-left: 20px;
+                text-decoration: none;
+                @include bold-roboto();
+                cursor: default;
+            }
+        }
+
+
+.col-9 {
+    .item {
+        padding: 20px;
+        border: 1px solid #dfdfdf;
+        margin-bottom:30px;
+    }
+   h2 {
+       @include font-style(30px, $darkColor);
+       margin: 40px 0;
+       @include bold-roboto();
+   }
+   h4 {
+    @include font-style(20px, $darkColor);
+    @include bold-roboto();
+   }
+    p {
+        @include font-style(16px, $greyBlueColor);
+        line-height: 1.5;
+        margin-bottom: 50px;
+        font-family: $font;
+        
+    }
+    .margin-left-col-4 {
+        margin-left: 30px;
+    } 
+    .margin-bottom-col-4 {
+        margin-bottom: 30px;
+    }
+    .between-col-4 {
+        width: 30px;
+        
+    }
+    .card-margin-bottom {
+        margin-bottom: 125px;
+    }
+
+    .cards {
+        
+        .square {
+        @include rectangle(100px, 90px, $LightGreyColor);
+        }
+        p {
+        @include font-style(12px, $greenColor);
+        line-height: 1;
+        margin: 10px 0;
+        font-family: $font;
+        }
+        h5 {
+        @include font-style(14px, $greyColor);
+        @include bold-roboto();
+        }
+        .div-style {
+            justify-content: center;
+            margin-left: 20px;
+        }
+    }
+    
+   .margin-bottom60 {
+    margin-bottom: 60px;}
+   .button1 {
+       @include font-style(16px, $lightColor);
+       @include rectangle(160px, 50px, $redColor);
+       margin-right: 20px;
+       font-family: $font;
+       
+    }
+   .button2 {
+    @include font-style(16px, $lightColor);
+    @include rectangle(160px, 50px, $blueGreyColor);
+    margin-right: 20px;
+    font-family: $font;
+    }
+    .button3 {
+    @include font-style(16px, $lightColor);
+    @include rectangle(160px, 50px, $greenColor);
+    font-family: $font;
+   
+    }
+    .cub1 {
+        @include rectangle(50px, 50px, $blueColorFacebook);
+        @include font-style(18px, $lightColor);
+    }
+    .cub2 {
+        @include rectangle(50px, 50px, $blueColorTwiter);
+        @include font-style(18px, $lightColor);
+        margin-left: 5px;
+    }
+    .cub3 {
+        @include rectangle(50px, 50px, $blueColorLinkdin);
+        @include font-style(18px, $lightColor);
+        margin-left: 5px;
+    }
+    .cub4 {
+        @include rectangle(50px, 50px, $redColorPinterest);
+        @include font-style(18px, $lightColor);
+        margin-left: 5px;
+    }
+   .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    a {
+        @include font-style(16px, $greyBlueColor);
+        text-decoration: none;
+        font-family: $font;
+    }
+    .nav-item {
+        border: 1px solid $LightGreyColor;
+        text-align: center;
+        padding: 20px 0;
+    }
+   
+     .active {       
+        border-bottom: 1px solid $greenColor;
+        h5 {
+             @include font-style(16px, $darkColor);
+             @include bold-roboto();
+        }
+    }
+    }
+.tab-content {
+        padding: 40px 0 70px 30px;
+        margin-bottom: 55px;
+        border: 1px solid $LightGreyColor;
+        border-top: none;
+        background-color: $bgColor;
+        li {
+            margin: 20px 0;
+        }
+        .fa {
+            @include font-style(16px, $greenColor);
+            margin-right: 10px;
+            font-weight: bolder;
+        }
+        span {
+            @include font-style(16px, $greyBlueColor);
+            font-family: $font;
+        }
+    }
+.articles {
+    .first-row {
+        margin-right: 40px;
+    } 
+}
+}
+
+
+.col-3 {
+    .first-box {
+    h3 {
+        @include font-style(22px, $redColor);
+        @include bold-roboto();
+    } 
+    .margin {
+        margin: 36px 0;
+        align-items: center;
+        max-width: 210px;        
+     }
+     .line {
+         border-top: 1px solid #dfdfdf;
+     }
+    .button4 {
+        @include rectangle(210px, 50px, $greenColor);
+        @include font-style(16px, $lightColor);
+        font-family: $font;
+        i.fa.fa-shopping-cart {
+            margin-right: 10px;
+        }
+    }
+    .button5 {
+        @include rectangle(210px, 50px, $blueColor);
+        @include font-style(16px, $lightColor);
+        font-family: $font;
+        margin: 10px 0;
+        i.fa.fa-heart-o {
+            margin-right: 10px;
+        }
+    }
+    .button6 {
+        @include rectangle(210px, 50px, $blueGreyColor);
+        @include font-style(16px, $lightColor);
+        font-family: $font;      
+    }
+}
+.second-box {
+    .square {
+    @include rectangle(70px, 70px, $LightGreyColor);
+    margin-right: 15px;    
+    }
+    .line {
+        border-top: 1px solid $LightGreyColor;
+        padding: 25px 0;
+    }
+    .p-style {
+        @include font-style(18px, $darkColor);
+        @include bold-roboto();
+    }
+    .squareSmall {
+        @include rectangle(95px, 30px, transparent);
+        border: 1px solid $LightGreyColor;
+        @include font-style(13px, $greyColor);
+        font-family: $font;      
+    } 
+    i {
+        @include font-style(20px, $bgColor);    
+        position: absolute;  
+        right: 9px;
+        bottom: -4px;
+        z-index: 1;
+    }
+    .margin-bottom {
+        margin-bottom: 30px;
+    }
+   
+    .flag {
+        @include flag-relative();
+        margin-right: 10px;       
+        background-color: $OrangeColor;               
+    }
+    .flag:after {
+            @include flag-absolut(); 
+            border-top: 15px solid $OrangeColor;           
+    }
+    .flag1 {
+        @include flag-relative();
+        margin-right: 10px;       
+        background-color: $OrangeColor2;               
+    }
+    .flag1:after {
+            @include flag-absolut(); 
+            border-top: 15px solid $OrangeColor2;           
+    }
+    .flag2 {
+        @include flag-relative();
+        margin-right: 10px;       
+        background-color: $BlueColor2;               
+    }
+    .flag2:after {
+            @include flag-absolut(); 
+            border-top: 15px solid $BlueColor2;           
+    }
+    .flag3 {
+        @include flag-relative();
+        margin-right: 10px;       
+        background-color: $greenColor2;               
+    }
+    .flag3:after {
+            @include flag-absolut(); 
+            border-top: 15px solid $greenColor2;           
+    }
+    .flag4 {
+        @include flag-relative();
+        margin-right: 10px;       
+        background-color: $LightGreyColor;               
+    }
+    .flag4:after {
+            @include flag-absolut(); 
+            border-top: 15px solid $LightGreyColor;           
+    }
+
+
+    }  
+.third-box {
+    i.fa {
+        @include font-style(20px, $greyBlueColor);
+       
+    }
+    h5 {
+        @include font-style(20px, $darkColor); 
+        margin: 0 20px;
+        @include bold-roboto();
+    }
+    p {
+        @include font-style(16px, $greyBlueColor);
+        font-family: $font;
+    }
+}
+.four-box {
+    p {
+        @include font-style(14px, $greyBlueColor);
+        margin: 20px 0;
+        line-height: 1.5;
+        font-family: $font;
+    }
+    strong {
+        color: $darkColor;
+        font-weight: bolder;
+    }
+    .line {
+        border-top: 1px solid $LightGreyColor;
+        margin: 30px 0;
+    }
+}
+}
+   
+  
+.item1 {
+    padding: 20px;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    h4 {
+        @include font-style(20px, $darkColor);
+        margin-bottom: 30px;
+        @include bold-roboto();
+     }
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+} 
+.d-flex {
+    display: flex;
+}
+.bgWhite {
+    background-color: $bgColor;
+}
+.align-it {
+    align-items: baseline;
+}
+.list-nav {
+    @include rectangle(80px, 25px, none);
+    font-family: $font;
+    border: 1px solid $LightGreyColor;
+    color: $greyColor;
+    .select {
+        color: $greenColor;
+   } 
+
+    .option {
+        margin: 5px;
+    }
+    
+    
+  }
+}
+}
