@@ -82,8 +82,6 @@ main.ruslan {
     .four-square {
         display: flex;
         justify-content: center;
-        // justify-content: space-around;
-        // padding: 0 30px 30px 30px;
     }
 
     .col-3 {
@@ -91,13 +89,9 @@ main.ruslan {
     }
 
     .square-block {
-        // width: 440px;
-        // height: 410px;
         position: relative;
         background: white;
         border: $borderForCol;
-        // margin: 15px;
-        // padding: 15px;
         &:hover {
             box-shadow: $boxShadow;
             cursor: pointer;
@@ -119,24 +113,16 @@ main.ruslan {
         left: 0;
     }
 
-    // .triangle i {
-    //     display: flex;
-    //     margin-bottom: 20px;
-    //     background: transparent;
-    //     color: $colorWhite;
-    // }
-
 
     .two {
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: $borderForCol;
-        height: 90px;
     }
 
     .number-15 h3 {
-        padding: 40px 30px;
+        padding: 40px 30px 40px 0;
         color: $textBlack;
 
         font: {
@@ -146,7 +132,7 @@ main.ruslan {
     }
 
     .two-text {
-        padding: 0 30px;
+        padding: 0 0 0 30px;
 
         h3 {
             color: $textBlack;
@@ -172,8 +158,7 @@ main.ruslan {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 30px;
-        height: 70px;
+        padding: 20px;
 
         p {
             padding-left: 12px;
