@@ -7,17 +7,136 @@
     <title>Internet store</title>
 </head>
 <body>
+    <style>
+        body{
+            background-color: gray;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
 
+        }
+        ul li{
+            list-style-type: none;
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(10, 32, 44, 0.966);
+        }
+        a{
+            text-decoration: none;
+            color: rgb(178, 130, 76);;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+        }
+                /* styly for border-animation */
+        .border-animation{
+            position: absolute;
+            transition: all .1s;
+            background-color: white;
+        }
+
+        .border-l{
+            bottom: 0px;
+            left: 0px;
+            width: 2px;
+            height: 0px;
+
+        }
+        .border-t{
+            top: 0px;
+            left: 0px;
+            width: 0px;
+            height: 2px;
+        }
+        .border-r{
+            top: 0px;
+            right: 0px;
+            width: 2px;
+            height: 0px;
+        }
+
+        .border-b{
+            bottom: 0px;
+            right: 0px;
+            width: 0px;
+            height: 2px;
+        }
+    </style>
 
     <ul>
-        <li><a href="part9.html">Сутормина Ирина(part 9)</a></li>
-        <li><a href="part23.html">Задорожнюк Владислав(part 23)</a></li>
-        <li><a href="part4.html">Подгорный Андрей(part 4)</a></li>
-        <li><a href="part28.html">Бойко Екатерина(part 28 + header + footer)</a></li>
-        <li><a href="part21.html">Макарова Дарина(part 21)</a></li>
-        <li><a href="part3.html">Гусейнов Руслан(part 3)</a></li>
+        <li><a href="part9.html">Сутормина Ирина (part 9)</a></li>
+        <li><a href="part23.html">Задорожнюк Владислав (part 23)</a></li>
+        <li><a href="part4.html">Подгорный Андрей (part 4)</a></li>
+        <li><a href="part28.html">Бойко Екатерина (part 28 + header + footer)</a></li>
+        <li><a href="part21.html">Макарова Дарина (part 21)</a></li>
+        <li><a href="part3.html">Гусейнов Руслан (part 3)</a></li>
     </ul>
 
+    <script>
+        function BorderAnimation(elem){
+            if (!elem) return;
+            let border = [];
+            let styleElem = getComputedStyle(elem);
+            let classListBorder = ["border-l","border-t", "border-r", "border-b"];
+
+            if (styleElem.position == "static"){
+                elem.style.position = "relative";
+            };
+
+            for (let i = 0; i < 4; i++) {
+                border[i] = document.createElement("div");
+                border[i].classList.add("border-animation");
+                border[i].classList.add(classListBorder[i]);
+                elem.appendChild(border[i]);
+            };
+
+            elem.addEventListener("mouseenter", function(){
+                showBorder0();
+            });
+
+            elem.addEventListener("mouseleave", function(){
+                elem.style.border = "";
+                border[0].removeEventListener("transitionend", showBorder1);
+                border[1].removeEventListener("transitionend", showBorder2);
+                border[2].removeEventListener("transitionend", showBorder3);
+                for (let i = 0; i < 4; i++) {
+                    border[i].style.width = "";
+                    border[i].style.height = "";
+                };
+            });
+
+            function showBorder0(){
+                border[0].style.height = "100%";
+                border[0].addEventListener("transitionend", showBorder1);
+            };
+
+            function showBorder1(){
+                border[1].style.width = "100%";
+                border[1].addEventListener("transitionend", showBorder2);
+            };
+
+            function showBorder2(){
+                border[2].style.height = "100%";
+                border[2].addEventListener("transitionend", showBorder3);
+            };
+            function showBorder3(){
+                border[3].style.width = "100%";
+            };
+        };
+
+
+            window.addEventListener('DOMContentLoaded', function(){
+                let li = document.getElementsByTagName("li");
+                if (li[0]){
+                    for (let i = 0; i < li.length; i++) {
+                        new BorderAnimation(li[i]);
+                    };
+                };
+            });
+    </script>
+    
 
 </body>
 </html>
