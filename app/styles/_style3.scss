@@ -119,10 +119,10 @@ main.ruslan {
         justify-content: space-between;
         align-items: center;
         border-bottom: $borderForCol;
+        padding: 20px;
     }
 
     .number-15 h3 {
-        padding: 40px 30px 40px 0;
         color: $textBlack;
 
         font: {
@@ -132,7 +132,6 @@ main.ruslan {
     }
 
     .two-text {
-        padding: 0 0 0 30px;
 
         h3 {
             color: $textBlack;
