@@ -80,8 +80,8 @@ gulp.task('watch',function(){
 });
 gulp.task('clean', function(){
     return gulp.src('build')
-    .pipe(clean());
-})
+    .pipe(clean())
+});
 gulp.task('run', function(){
     runSequence('clean', 'images', 'html','fonts', 'reload-css', 'browser-sync', 'watch');
 });
