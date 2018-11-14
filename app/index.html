@@ -8,39 +8,37 @@
 </head>
 <body>
     <style>
-        body{
-            background-color: gray;
-        }
-        ul{
-            display: flex;
-            justify-content: space-around;
-
-        }
-        ul li{
-            list-style-type: none;
-            padding: 20px;
-            margin: 20px;
-            background-color: rgba(10, 32, 44, 0.966);
+        *{
+            padding: 0%;
+            margin: 0;
         }
         a{
+            font-size: 20px;
+            padding: 30px 40px;
+            background-color: rgba(10, 32, 44, 0.801);
             text-decoration: none;
-            color: rgb(178, 130, 76);;
+            color: #8bc34a;
             text-transform: uppercase;
             font-weight: bold;
             text-align: center;
             display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 9999;
         }
                 /* styly for border-animation */
         .border-animation{
             position: absolute;
             transition: all .1s;
-            background-color: white;
+            background-color: #8bc34a;
         }
 
         .border-l{
             bottom: 0px;
             left: 0px;
-            width: 2px;
+            width: 3px;
             height: 0px;
 
         }
@@ -48,12 +46,12 @@
             top: 0px;
             left: 0px;
             width: 0px;
-            height: 2px;
+            height: 3px;
         }
         .border-r{
             top: 0px;
             right: 0px;
-            width: 2px;
+            width: 3px;
             height: 0px;
         }
 
@@ -61,18 +59,91 @@
             bottom: 0px;
             right: 0px;
             width: 0px;
-            height: 2px;
+            height: 3px;
+        }
+        .wrapper{
+            width: 100%;
+            height: 50vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .inner{
+            width: 100%;
+            height: 120vh;
+        }
+        img{
+            width: 100%;
+        }
+        .space{
+            width: 100%;
+            height: 3px;
+            background-color: #8bc34a;
         }
     </style>
 
-    <ul>
+
+    <!-- <ul>
         <li><a href="part9.html">Сутормина Ирина (part 9)</a></li>
         <li><a href="part23.html">Задорожнюк Владислав (part 23)</a></li>
         <li><a href="part4.html">Подгорный Андрей (part 4)</a></li>
         <li><a href="part28.html">Бойко Екатерина (part 28 + header + footer)</a></li>
         <li><a href="part21.html">Макарова Дарина (part 21)</a></li>
         <li><a href="part3.html">Гусейнов Руслан (part 3)</a></li>
-    </ul>
+    </ul> -->
+
+    <div class="space"></div>
+    <div class="wrapper">
+        <div class="inner">
+            <img src="images/04_all new items2222.png" alt="">
+        </div>
+        <a href="part4.html">Подгорный Андрей (part 4)</a>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="wrapper">
+        <div class="inner">
+            <img src="images/23_Withdrawals5.png" alt="">
+        </div>
+        <a href="part23.html">Задорожнюк Владислав (part 23)</a>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="wrapper">
+        <div class="inner">
+            <img src="images/09_product details3.png" alt="">
+        </div>
+        <a href="part9.html">Сутормина Ирина (part 9)</a>
+    </div>
+    
+    <div class="space"></div>
+
+    <div class="wrapper">
+        <div class="inner">
+            <img src="images/03_main_home1.png" alt="">
+        </div>
+        <a href="part3.html">Гусейнов Руслан (part 3)</a>
+    </div>
+    <div class="space"></div>
+
+    <div class="wrapper">
+        <div class="inner">
+            <img src="images/28_contact6.png" alt="">
+        </div>
+        <a href="part28.html">Бойко Екатерина (part 28 + header + footer)</a>
+    </div>
+    <div class="space"></div>
+
+    <div class="wrapper">
+        <div class="inner">
+            <img src="images/21_upload products4.png" alt="">
+        </div>
+        <a href="part21.html">Макарова Дарина (part 21)</a>
+    </div>
+    <div class="space"></div>
+
+
 
     <script>
         function BorderAnimation(elem){
@@ -128,15 +199,41 @@
 
 
             window.addEventListener('DOMContentLoaded', function(){
-                let li = document.getElementsByTagName("li");
-                if (li[0]){
-                    for (let i = 0; i < li.length; i++) {
-                        new BorderAnimation(li[i]);
+                let a = document.getElementsByTagName("a");
+                if (a[0]){
+                    for (let i = 0; i < a.length; i++) {
+                        new BorderAnimation(a[i]);
                     };
                 };
             });
     </script>
-    
+
+    <script>
+        function MyParallax (wrapper, inner) {
+        let windowHeight = window.innerHeight;
+        let startInnerOffset = wrapper.offsetHeight - inner.offsetHeight;
+        let k = -windowHeight / startInnerOffset;
+        let y = (windowHeight - wrapper.getBoundingClientRect().top) / k + startInnerOffset;
+        inner.style.transform = 'translateY(' + y + 'px)';
+
+        window.addEventListener("scroll", function(){
+            let wrapperBounding = wrapper.getBoundingClientRect();
+            if (wrapperBounding.top < windowHeight && wrapperBounding.bottom > 0) {
+                y = (windowHeight - wrapperBounding.top) / k + startInnerOffset;
+                inner.style.transform = 'translateY(' + y + 'px)';
+            }
+        });
+        }
+
+        window.addEventListener("load", function(){
+            let wrapper = document.getElementsByClassName('wrapper');
+            let inner = document.getElementsByClassName('inner');
+
+            for (let i = 0; i < wrapper.length; i++) {
+                new MyParallax(wrapper[i], inner[i]);
+            }
+        });
+    </script>
 
 </body>
 </html>
